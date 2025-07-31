@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - MASUKAME by FOMUS</title>
+    <meta name="description" content="联系MASUKAME洽谈合作与定制订单。我们的专业团队将用心回复您的咨询。">
+    <meta name="keywords" content="MASUKAME, 联系我们, 合作, 订单, 素体, 艺术手办">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="联系我们 - MASUKAME by FOMUS">
+    <meta property="og:description" content="联系MASUKAME咨询相关事宜">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomus.global/masukame/contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">MASUKAME</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="collection.html">作品集</a></li>
+                <li><a href="order.html">定制订单</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+                <li><a href="../index.html">🌐 言语选择</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Form and Info in Single View -->
+        <section id="contact" style="min-height: calc(100vh - 100px); padding: 3rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Left Side - Contact Form -->
+                    <div>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">联系表单</h2>
+                        <div class="card">
+                            <form id="contact-form" action="#" method="POST" style="display: grid; gap: 1.2rem;">
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="name-jp">姓名 *</label>
+                                        <input type="text" id="name-jp" name="name-jp" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">电子邮箱 *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="company">公司/机构名称</label>
+                                        <input type="text" id="company" name="company" placeholder="可选">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiry-type">咨询类型 *</label>
+                                        <select id="inquiry-type" name="inquiry-type" required>
+                                            <option value="">请选择</option>
+                                            <option value="collaboration">合作咨询</option>
+                                            <option value="order">定制订单</option>
+                                            <option value="membership">会员注册</option>
+                                            <option value="other">其他</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">主题 *</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="请输入咨询主题">
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="message">留言内容 *</label>
+                                        <textarea id="message" name="message" required placeholder="请详细描述您的咨询内容" style="min-height: 100px;"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="budget">预算范围</label>
+                                        <select id="budget" name="budget">
+                                            <option value="">请选择（可选）</option>
+                                            <option value="under-500k">5万元以下</option>
+                                            <option value="500k-1m">5万元 - 10万元</option>
+                                            <option value="1m-3m">10万元 - 30万元</option>
+                                            <option value="over-3m">30万元以上</option>
+                                            <option value="consultation">需要详细咨询</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" name="privacy-policy" required style="margin-right: 0.5rem;">
+                                        我同意隐私政策 *
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">
+                                    发送咨询
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Contact Info -->
+                    <div>
+                        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">联系方式</h3>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>📧 邮件回复</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                我们将在<strong>3个工作日内</strong>回复<br>
+                                工作时间：周一至周五 10:00-18:00
+                            </p>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>🤝 合作项目</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                与企业及艺术家的联合创作<br>
+                                方案策划与报价服务
+                            </p>
+                        </div>
+                        
+                        <div class="card">
+                            <h4>🎨 定制订单</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                会员注册与个性化定制咨询<br>
+                                制作时间安排协调
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 FOMUS. All rights reserved. | MASUKAME by FOMUS</p>
+                <p>Japanese Traditional Art meets Modern Luxury</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

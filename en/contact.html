@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MASUKAME by FOMUS</title>
+    <meta name="description" content="Contact MASUKAME for collaborations and custom orders. Our professional team will respond thoughtfully to your inquiries.">
+    <meta name="keywords" content="MASUKAME, contact, collaboration, order, base figure, art figure">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact - MASUKAME by FOMUS">
+    <meta property="og:description" content="Contact MASUKAME for inquiries">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomus.global/masukame/contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">MASUKAME</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="collection.html">COLLECTION</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="../index.html">🌐 Language</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Form and Info in Single View -->
+        <section id="contact" style="min-height: calc(100vh - 100px); padding: 3rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Left Side - Contact Form -->
+                    <div>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Contact Form</h2>
+                        <div class="card">
+                            <form id="contact-form" action="#" method="POST" style="display: grid; gap: 1.2rem;">
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="name-jp">Name *</label>
+                                        <input type="text" id="name-jp" name="name-jp" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="company">Company/Organization</label>
+                                        <input type="text" id="company" name="company" placeholder="Optional">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiry-type">Inquiry Type *</label>
+                                        <select id="inquiry-type" name="inquiry-type" required>
+                                            <option value="">Please select</option>
+                                            <option value="collaboration">Collaboration Request</option>
+                                            <option value="order">Custom Order</option>
+                                            <option value="membership">About Membership</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Please enter your inquiry subject">
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="message">Message *</label>
+                                        <textarea id="message" name="message" required placeholder="Please describe your inquiry" style="min-height: 100px;"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="budget">Budget</label>
+                                        <select id="budget" name="budget">
+                                            <option value="">Please select (optional)</option>
+                                            <option value="under-500k">Under $5,000</option>
+                                            <option value="500k-1m">$5,000 - $10,000</option>
+                                            <option value="1m-3m">$10,000 - $30,000</option>
+                                            <option value="over-3m">Over $30,000</option>
+                                            <option value="consultation">Consultation Required</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" name="privacy-policy" required style="margin-right: 0.5rem;">
+                                        I agree to the Privacy Policy *
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">
+                                    Send Inquiry
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Contact Info -->
+                    <div>
+                        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">About Contact</h3>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>📧 Email Response</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                We will respond within <strong>3 business days</strong><br>
+                                Weekdays 10:00-18:00 (excluding weekends and holidays)
+                            </p>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>🤝 Collaboration</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                Joint production with companies and artists<br>
+                                Proposal planning and quotation services
+                            </p>
+                        </div>
+                        
+                        <div class="card">
+                            <h4>🎨 Custom Orders</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                Membership registration and customization consultation<br>
+                                Production schedule coordination
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 FOMUS. All rights reserved. | MASUKAME by FOMUS</p>
+                <p>Japanese Traditional Art meets Modern Luxury</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

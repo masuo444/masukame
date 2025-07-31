@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASUKAME by FOMUS - Language Selection</title>
+    <meta name="description" content="Select your preferred language to explore MASUKAME - Japanese Traditional Art meets Modern Luxury">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MASUKAME by FOMUS">
+    <meta property="og:description" content="Japanese Traditional Art meets Modern Luxury">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomus.global/masukame">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-primary: #2c5530;
+            --color-primary-light: #4a7c59;
+            --color-gold: #d4af37;
+            --color-charcoal: #2d3436;
+            --color-mist: #f8f9fa;
+            --color-stone: #636e72;
+            --color-white: #ffffff;
+            --shadow-soft: 0 10px 40px rgba(0, 0, 0, 0.08);
+            --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --gradient-primary: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            --gradient-background: radial-gradient(ellipse at top, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--gradient-background);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background particles */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(44, 85, 48, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 60% 20%, rgba(212, 175, 55, 0.05) 0%, transparent 30%);
+            animation: float 20s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(10px) rotate(-1deg); }
+        }
+
+        .language-selector {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: var(--shadow-soft);
+            padding: 2rem 2rem;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            margin: 1rem;
+            position: relative;
+            z-index: 10;
+            transition: all 0.4s ease;
+        }
+
+        .language-selector:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-5px);
+        }
+
+        .brand-header {
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            font-family: 'Noto Serif JP', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.15em;
+            position: relative;
+        }
+
+        .logo::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .tagline {
+            color: var(--color-stone);
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--color-stone);
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .language-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .language-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.2rem 0.8rem;
+            border: 2px solid rgba(44, 85, 48, 0.1);
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--color-charcoal);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .language-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .language-button:hover::before {
+            left: 100%;
+        }
+
+        .language-button:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(44, 85, 48, 0.15);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .language-button:active {
+            transform: translateY(-4px) scale(1.01);
+        }
+
+        .flag {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+            transition: transform 0.3s ease;
+        }
+
+        .language-button:hover .flag {
+            transform: scale(1.1) rotate(2deg);
+        }
+
+        .language-name {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--color-charcoal);
+            transition: color 0.3s ease;
+        }
+
+        .language-button:hover .language-name {
+            color: var(--color-primary);
+        }
+
+        .language-native {
+            font-size: 0.85rem;
+            color: var(--color-stone);
+            font-weight: 400;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .language-button:hover .language-native {
+            opacity: 1;
+        }
+
+        .footer-section {
+            border-top: 1px solid rgba(44, 85, 48, 0.1);
+            padding-top: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .footer-text {
+            color: var(--color-stone);
+            font-size: 0.9rem;
+            font-weight: 300;
+            opacity: 0.7;
+            line-height: 1.6;
+        }
+
+        .footer-brand {
+            font-weight: 500;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Decorative elements */
+        .decoration {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .decoration-1 {
+            top: 20px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--color-gold), transparent);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        .decoration-2 {
+            bottom: 30px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, var(--color-primary), transparent);
+            border-radius: 50%;
+            opacity: 0.1;
+            animation: pulse 4s ease-in-out infinite 2s;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.1; }
+            50% { transform: scale(1.2); opacity: 0.2; }
+        }
+
+        @media (max-width: 768px) {
+            .language-selector {
+                padding: 2rem 1.5rem;
+                margin: 0.5rem;
+                border-radius: 16px;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .language-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+            }
+
+            .language-button {
+                padding: 1rem 0.5rem;
+            }
+
+            .flag {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .language-selector {
+                padding: 1.5rem 1rem;
+            }
+
+            .tagline {
+                font-size: 0.9rem;
+            }
+
+            .language-name {
+                font-size: 0.9rem;
+            }
+
+            .language-grid {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+        }
+
+        /* Smooth loading animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .language-selector {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .language-button {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .language-button:nth-child(1) { animation-delay: 0.1s; }
+        .language-button:nth-child(2) { animation-delay: 0.2s; }
+        .language-button:nth-child(3) { animation-delay: 0.3s; }
+        .language-button:nth-child(4) { animation-delay: 0.4s; }
+        .language-button:nth-child(5) { animation-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        
+        <div class="brand-header">
+            <h1 class="logo">MASUKAME</h1>
+            <p class="tagline">Japanese Traditional Art meets Modern Luxury</p>
+            <p class="subtitle">Choose your preferred language to begin your journey</p>
+        </div>
+        
+        <div class="language-grid">
+            <a href="ja/index.html" class="language-button">
+                <div class="flag">🇯🇵</div>
+                <div class="language-name">Japanese</div>
+                <div class="language-native">日本語</div>
+            </a>
+            
+            <a href="en/index.html" class="language-button">
+                <div class="flag">🇺🇸</div>
+                <div class="language-name">English</div>
+                <div class="language-native">English</div>
+            </a>
+            
+            <a href="ar/index.html" class="language-button">
+                <div class="flag">🇸🇦</div>
+                <div class="language-name">Arabic</div>
+                <div class="language-native">العربية</div>
+            </a>
+            
+            <a href="zh/index.html" class="language-button">
+                <div class="flag">🇨🇳</div>
+                <div class="language-name">Chinese</div>
+                <div class="language-native">中文</div>
+            </a>
+            
+            <a href="fr/index.html" class="language-button">
+                <div class="flag">🇫🇷</div>
+                <div class="language-name">French</div>
+                <div class="language-native">Français</div>
+            </a>
+        </div>
+        
+        <div class="footer-section">
+            <div class="footer-brand">MASUKAME by FOMUS</div>
+            <p class="footer-text">&copy; 2024 FOMUS. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

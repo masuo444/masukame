@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MASUKAME by FOMUS</title>
+    <meta name="description" content="Contactez MASUKAME pour des collaborations et des commandes personnalisées. Notre équipe professionnelle répondra avec attention à vos demandes.">
+    <meta name="keywords" content="MASUKAME, contact, collaboration, commande, figurine de base, figurine artistique">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact - MASUKAME by FOMUS">
+    <meta property="og:description" content="Contactez MASUKAME pour vos demandes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomus.global/masukame/contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">MASUKAME</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="about.html">À PROPOS</a></li>
+                <li><a href="collection.html">COLLECTION</a></li>
+                <li><a href="order.html">COMMANDES</a></li>
+                <li><a href="contact.html" class="active">CONTACT</a></li>
+                <li><a href="../index.html">🌐 Langue</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Form and Info in Single View -->
+        <section id="contact" style="min-height: calc(100vh - 100px); padding: 3rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Left Side - Contact Form -->
+                    <div>
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">Formulaire de Contact</h2>
+                        <div class="card">
+                            <form id="contact-form" action="#" method="POST" style="display: grid; gap: 1.2rem;">
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="name-jp">Nom *</label>
+                                        <input type="text" id="name-jp" name="name-jp" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Adresse E-mail *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="company">Nom de l'Entreprise/Organisation</label>
+                                        <input type="text" id="company" name="company" placeholder="Optionnel">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiry-type">Type de Demande *</label>
+                                        <select id="inquiry-type" name="inquiry-type" required>
+                                            <option value="">Veuillez sélectionner</option>
+                                            <option value="collaboration">Demande de Collaboration</option>
+                                            <option value="order">Commande Personnalisée</option>
+                                            <option value="membership">À propos de l'Adhésion</option>
+                                            <option value="other">Autre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Sujet *</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="Veuillez saisir le sujet de votre demande">
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="message">Message *</label>
+                                        <textarea id="message" name="message" required placeholder="Veuillez décrire votre demande" style="min-height: 100px;"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="budget">Budget</label>
+                                        <select id="budget" name="budget">
+                                            <option value="">Veuillez sélectionner (optionnel)</option>
+                                            <option value="under-500k">Moins de 5 000€</option>
+                                            <option value="500k-1m">5 000€ - 10 000€</option>
+                                            <option value="1m-3m">10 000€ - 30 000€</option>
+                                            <option value="over-3m">Plus de 30 000€</option>
+                                            <option value="consultation">Consultation Requise</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" name="privacy-policy" required style="margin-right: 0.5rem;">
+                                        J'accepte la Politique de Confidentialité *
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">
+                                    Envoyer la Demande
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Contact Info -->
+                    <div>
+                        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">À propos du Contact</h3>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>📧 Réponse par E-mail</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                Nous répondrons dans les <strong>3 jours ouvrables</strong><br>
+                                Jours ouvrables 10h00-18h00 (sauf week-end et jours fériés)
+                            </p>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>🤝 Collaboration</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                Production conjointe avec entreprises et artistes<br>
+                                Services de planification de propositions et devis
+                            </p>
+                        </div>
+                        
+                        <div class="card">
+                            <h4>🎨 Commandes Personnalisées</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                Inscription d'adhésion et consultation de personnalisation<br>
+                                Coordination du calendrier de production
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 FOMUS. All rights reserved. | MASUKAME by FOMUS</p>
+                <p>Japanese Traditional Art meets Modern Luxury</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

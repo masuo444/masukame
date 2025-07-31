@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - MASUKAME by FOMUS</title>
+    <meta name="description" content="تواصل مع MASUKAME للتعاون والطلبات المخصصة. فريقنا المتخصص سيرد بعناية على استفساراتك.">
+    <meta name="keywords" content="MASUKAME, اتصل بنا, تعاون, طلب, تمثال أساسي, تمثال فني">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="اتصل بنا - MASUKAME by FOMUS">
+    <meta property="og:description" content="تواصل مع MASUKAME للاستفسارات">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fomus.global/masukame/contact">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">MASUKAME</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="collection.html">المجموعة</a></li>
+                <li><a href="order.html">الطلبات</a></li>
+                <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                <li><a href="../index.html">🌐 اللغة</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Contact Form and Info in Single View -->
+        <section id="contact" style="min-height: calc(100vh - 100px); padding: 3rem 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                    <!-- Left Side - Contact Form -->
+                    <div>
+                        <h2 class="section-title" style="text-align: right; margin-bottom: 2rem;">نموذج التواصل</h2>
+                        <div class="card">
+                            <form id="contact-form" action="#" method="POST" style="display: grid; gap: 1.2rem;">
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="name-jp">الاسم *</label>
+                                        <input type="text" id="name-jp" name="name-jp" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">البريد الإلكتروني *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="company">اسم الشركة/المؤسسة</label>
+                                        <input type="text" id="company" name="company" placeholder="اختياري">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inquiry-type">نوع الاستفسار *</label>
+                                        <select id="inquiry-type" name="inquiry-type" required>
+                                            <option value="">يرجى الاختيار</option>
+                                            <option value="collaboration">طلب تعاون</option>
+                                            <option value="order">طلب مخصص</option>
+                                            <option value="membership">حول العضوية</option>
+                                            <option value="other">أخرى</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">الموضوع *</label>
+                                    <input type="text" id="subject" name="subject" required placeholder="يرجى إدخال موضوع استفسارك">
+                                </div>
+                                
+                                <div class="grid grid-2" style="gap: 1rem;">
+                                    <div class="form-group">
+                                        <label for="message">الرسالة *</label>
+                                        <textarea id="message" name="message" required placeholder="يرجى وصف استفسارك" style="min-height: 100px;"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="budget">الميزانية</label>
+                                        <select id="budget" name="budget">
+                                            <option value="">يرجى الاختيار (اختياري)</option>
+                                            <option value="under-500k">أقل من 20,000 ريال</option>
+                                            <option value="500k-1m">20,000 - 40,000 ريال</option>
+                                            <option value="1m-3m">40,000 - 120,000 ريال</option>
+                                            <option value="over-3m">أكثر من 120,000 ريال</option>
+                                            <option value="consultation">يتطلب استشارة</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" name="privacy-policy" required style="margin-left: 0.5rem;">
+                                        أوافق على سياسة الخصوصية *
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">
+                                    إرسال الاستفسار
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Contact Info -->
+                    <div>
+                        <h3 style="color: var(--color-accent); margin-bottom: 1.5rem;">حول التواصل</h3>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>📧 الرد عبر البريد</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                سنرد خلال <strong>3 أيام عمل</strong><br>
+                                أيام العمل 10:00-18:00 (عدا عطلة نهاية الأسبوع والعطل)
+                            </p>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <h4>🤝 التعاون</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                الإنتاج المشترك مع الشركات والفنانين<br>
+                                خدمات التخطيط للاقتراحات والتسعير
+                            </p>
+                        </div>
+                        
+                        <div class="card">
+                            <h4>🎨 الطلبات المخصصة</h4>
+                            <p style="font-size: 0.9rem; margin: 0.5rem 0;">
+                                تسجيل العضوية واستشارة التخصيص<br>
+                                تنسيق جدول الإنتاج
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 FOMUS. All rights reserved. | MASUKAME by FOMUS</p>
+                <p>Japanese Traditional Art meets Modern Luxury</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
