@@ -128,4 +128,106 @@ document.addEventListener('DOMContentLoaded', function() {
             heroContent.classList.add('fade-in');
         }
     });
+    
+    // Mobile-specific optimizations
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
+    
+    // Prevent zoom on input focus (iOS)
+    const inputs = document.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            if (isMobile()) {
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+            }
+        });
+        
+        input.addEventListener('blur', function() {
+            if (isMobile()) {
+                document.querySelector('meta[name="viewport"]').setAttribute('content', 'width=device-width, initial-scale=1.0');
+            }
+        });
+    });
+    
+    // Touch-friendly button enhancement
+    const buttons = document.querySelectorAll('.btn, .elegant-btn, button');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', function() {
+            this.style.transform = 'scale(0.95)';
+        });
+        
+        button.addEventListener('touchend', function() {
+            this.style.transform = '';
+        });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const navMenu = document.querySelector('.nav-menu');
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        
+        if (navMenu && navMenu.classList.contains('active') && 
+            !navMenu.contains(e.target) && 
+            !mobileMenuToggle.contains(e.target)) {
+            
+            navMenu.classList.remove('active');
+            mobileMenuToggle.classList.remove('active');
+            
+            const spans = mobileMenuToggle.querySelectorAll('span');
+            spans.forEach(span => {
+                span.style.transform = 'none';
+                span.style.opacity = '1';
+            });
+        }
+    });
+    
+    // Optimize scroll performance on mobile
+    let ticking = false;
+    
+    function updateOnScroll() {
+        highlightNavigation();
+        ticking = false;
+    }
+    
+    function requestScrollUpdate() {
+        if (!ticking) {
+            requestAnimationFrame(updateOnScroll);
+            ticking = true;
+        }
+    }
+    
+    // Replace scroll event listener for better performance
+    window.removeEventListener('scroll', highlightNavigation);
+    window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+    
+    // Handle orientation change
+    window.addEventListener('orientationchange', function() {
+        setTimeout(function() {
+            window.scrollTo(0, window.scrollY);
+        }, 100);
+    });
+    
+    // Improve image loading on mobile
+    const images = document.querySelectorAll('img');
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                }
+            });
+        });
+        
+        images.forEach(img => {
+            if (img.dataset.src) {
+                imageObserver.observe(img);
+            }
+        });
+    }
 });

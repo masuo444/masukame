@@ -2676,5 +2676,263 @@ footer::before {
     top: -0.5rem;
     left: 1rem;
   }
-}\n\n@media (max-width: 480px) {\n  .hero-badge {\n    font-size: 0.75rem;\n    padding: 0.4rem 1rem;\n  }\n  \n  .title-japanese {\n    font-size: 2.5rem;\n  }\n  \n  .title-english {\n    font-size: 1.2rem;\n  }\n  \n  .hero-description {\n    font-size: 1rem;\n  }\n  \n  .btn-modern {\n    padding: 0.7rem 1.5rem;\n    font-size: 0.8rem;\n  }\n  \n  .section-number {\n    font-size: 2.5rem;\n  }\n  \n  .feature-icon {\n    font-size: 2rem;\n  }\n  \n  .founder-message::before {\n    font-size: 2.5rem;\n  }\n  \n  .nav-item {\n    padding: var(--spacing-md);\n  }\n  \n  .nav-icon {\n    width: 60px;\n    height: 60px;\n    font-size: 1.8rem;\n  }\n  \n  .nav-content h3 {\n    font-size: 1.2rem;\n  }\n  \n  .feature-icon-modern {\n    width: 50px;\n    height: 50px;\n    font-size: 1.5rem;\n  }\n  \n  .quote-mark {\n    font-size: 3rem;\n  }\n}"
+}
+
+/* Collection Page Mobile Optimization */
+@media (max-width: 768px) {
+  /* Collection Hero Section */
+  .hero {
+    height: auto !important;
+    min-height: calc(100vh - 100px);
+    padding: 2rem 1rem !important;
+  }
+  
+  .hero > .container > div {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  /* Product Image on Mobile */
+  .product-image {
+    max-width: 300px !important;
+    margin: 0 auto 2rem !important;
+  }
+  
+  /* Product Info Mobile */
+  .hero h1 {
+    font-size: 1.8rem !important;
+    text-align: center;
+  }
+  
+  .hero .subtitle {
+    text-align: center;
+    font-size: 1rem !important;
+  }
+  
+  .hero .description {
+    text-align: center;
+  }
+  
+  .hero .description p {
+    font-size: 0.95rem !important;
+  }
+  
+  /* Features Box Mobile */
+  .hero > .container > div > div:last-child > div:first-of-type {
+    padding: 0.8rem !important;
+  }
+  
+  /* Price and CTA Mobile */
+  .hero > .container > div > div:last-child > div:last-child {
+    text-align: center !important;
+  }
+  
+  .hero > .container > div > div:last-child > div:last-child p:first-child {
+    font-size: 1.3rem !important;
+  }
+  
+  /* Collection Grid Mobile */
+  .collection-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  /* Mobile Menu Improvements */
+  .nav-menu {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-menu li a {
+    padding: var(--spacing-sm) var(--spacing-md);
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .title-japanese {
+    font-size: 2.5rem;
+  }
+  
+  .title-english {
+    font-size: 1.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  .btn-modern {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .section-number {
+    font-size: 2.5rem;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+  }
+  
+  .founder-message::before {
+    font-size: 2.5rem;
+  }
+  
+  .nav-item {
+    padding: var(--spacing-md);
+  }
+  
+  .nav-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+  
+  .nav-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .feature-icon-modern {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .quote-mark {
+    font-size: 3rem;
+  }
+  
+  /* Small Mobile Collection Specific */
+  .hero {
+    padding: 1.5rem 0.5rem !important;
+  }
+  
+  .product-image {
+    max-width: 250px !important;
+  }
+  
+  .hero h1 {
+    font-size: 1.5rem !important;
+  }
+  
+  .hero .description p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* Features List Mobile */
+  .hero ul {
+    font-size: 0.8rem !important;
+    padding-left: 1rem !important;
+  }
+  
+  /* Buttons Mobile */
+  .btn, .btn-primary, .btn-modern {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Card Padding Mobile */
+  .card {
+    padding: var(--spacing-md) !important;
+  }
+  
+  /* Mobile Touch Targets */
+  a, button, .btn {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Disabled Buttons Mobile */
+  span.btn, span.elegant-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+  }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 768px) {
+  /* Navigation Improvements */
+  header {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  /* Mobile Menu Animation */
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  /* Content Spacing Mobile */
+  section {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Text Readability Mobile */
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  /* Form Elements Mobile */
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Image Optimization Mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Scroll Performance */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Tap Highlight */
+  a, button {
+    -webkit-tap-highlight-color: rgba(44, 85, 48, 0.1);
+  }
+}"
 
