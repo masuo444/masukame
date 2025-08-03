@@ -1,0 +1,92 @@
+{
+  "globalKeywords": {
+    "primary": [
+      "luxury art toy",
+      "premium collectible",
+      "Japanese traditional craft",
+      "handcrafted wooden figure",
+      "limited edition art",
+      "museum quality collectible",
+      "international luxury goods",
+      "expensive art toy",
+      "collector investment",
+      "cultural art piece"
+    ],
+    "markets": {
+      "US": ["collectible toy", "art collectible", "luxury gift", "museum piece", "designer toy"],
+      "UK": ["luxury collectible", "artisan craft", "premium toy", "handmade sculpture"],
+      "Germany": ["Luxus Kunstspielzeug", "Premium Sammlerobjekt", "Handgefertigte Holzfigur"],
+      "France": ["jouet d'art de luxe", "objet de collection premium", "artisanat japonais"],
+      "China": ["奢侈艺术玩具", "高端收藏品", "日本传统工艺", "限量版艺术品"],
+      "Japan": ["高級アートトイ", "プレミアムコレクタブル", "伝統工芸品", "限定版アート"],
+      "Arabia": ["لعبة فنية فاخرة", "قطعة مجموعة مميزة", "حرفة يابانية تقليدية"]
+    }
+  },
+  "targetMarkets": {
+    "primary": ["US", "UK", "Germany", "France", "Japan"],
+    "secondary": ["Canada", "Australia", "Singapore", "Hong Kong", "Switzerland"],
+    "emerging": ["UAE", "Saudi Arabia", "South Korea", "Taiwan", "Netherlands"]
+  },
+  "searchEngines": {
+    "google": {
+      "regions": ["US", "UK", "DE", "FR", "JP", "CA", "AU", "SG", "HK", "CH"],
+      "optimized": true
+    },
+    "bing": {
+      "regions": ["US", "UK", "DE", "FR", "CA", "AU"],
+      "optimized": true
+    },
+    "baidu": {
+      "regions": ["CN", "HK", "TW"],
+      "optimized": true
+    },
+    "yandex": {
+      "regions": ["RU", "KZ", "BY"],
+      "optimized": true
+    }
+  },
+  "socialMedia": {
+    "platforms": [
+      "Instagram (@FOMUS_official)",
+      "Twitter (@FOMUS_official)",
+      "Facebook",
+      "LinkedIn",
+      "Pinterest",
+      "TikTok"
+    ],
+    "hashtags": [
+      "#MASUKAME",
+      "#LuxuryArtToy",
+      "#JapaneseTraditionalCraft",
+      "#PremiumCollectible",
+      "#HandcraftedArt",
+      "#LimitedEdition",
+      "#ArtCollector",
+      "#MuseumQuality",
+      "#CulturalArt",
+      "#InternationalLuxury"
+    ]
+  },
+  "prDistribution": {
+    "artMedia": [
+      "ARTnews",
+      "Artsy",
+      "Art Basel",
+      "Collector Magazine",
+      "Contemporary Art Daily"
+    ],
+    "luxuryMedia": [
+      "Robb Report",
+      "Luxury Daily",
+      "Elite Traveler",
+      "Town & Country",
+      "Wallpaper*"
+    ],
+    "collectibleMedia": [
+      "Collectors Weekly",
+      "LiveAuctioneers",
+      "Heritage Auctions",
+      "Bonhams Magazine"
+    ]
+  }
+}

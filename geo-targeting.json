@@ -1,0 +1,183 @@
+{
+  "geoTargeting": {
+    "primaryMarkets": {
+      "US": {
+        "currency": "USD",
+        "shippingAvailable": true,
+        "localizedPricing": "$720",
+        "searchTerms": ["luxury art toy", "collectible figure", "Japanese craft", "museum quality"],
+        "platforms": ["Google.com", "Bing.com", "Yahoo.com"],
+        "timeZones": ["EST", "CST", "MST", "PST"],
+        "culturalNotes": "Emphasis on investment value and exclusivity"
+      },
+      "UK": {
+        "currency": "GBP", 
+        "shippingAvailable": true,
+        "localizedPricing": "£520",
+        "searchTerms": ["luxury collectible", "artisan craft", "premium figurine", "handmade sculpture"],
+        "platforms": ["Google.co.uk", "Bing.co.uk"],
+        "timeZones": ["GMT"],
+        "culturalNotes": "Focus on heritage and traditional craftsmanship"
+      },
+      "Germany": {
+        "currency": "EUR",
+        "shippingAvailable": true,
+        "localizedPricing": "€600",
+        "searchTerms": ["Luxus Kunstspielzeug", "Premium Sammlerobjekt", "Handgefertigte Holzfigur"],
+        "platforms": ["Google.de", "Bing.de"],
+        "timeZones": ["CET"],
+        "culturalNotes": "Emphasize quality engineering and precision craftsmanship"
+      },
+      "France": {
+        "currency": "EUR",
+        "shippingAvailable": true,
+        "localizedPricing": "€600",
+        "searchTerms": ["jouet d'art de luxe", "objet de collection premium", "artisanat japonais"],
+        "platforms": ["Google.fr", "Bing.fr"],
+        "timeZones": ["CET"],
+        "culturalNotes": "Highlight artistic merit and cultural sophistication"
+      },
+      "Japan": {
+        "currency": "JPY",
+        "shippingAvailable": true,
+        "localizedPricing": "¥95,000",
+        "searchTerms": ["高級アートトイ", "プレミアムコレクタブル", "伝統工芸品", "限定版アート"],
+        "platforms": ["Google.co.jp", "Yahoo.co.jp"],
+        "timeZones": ["JST"],
+        "culturalNotes": "Emphasize traditional techniques and cultural pride"
+      },
+      "Canada": {
+        "currency": "CAD",
+        "shippingAvailable": true,
+        "localizedPricing": "$820",
+        "searchTerms": ["luxury art collectible", "Japanese traditional craft", "premium figurine"],
+        "platforms": ["Google.ca", "Bing.ca"],
+        "timeZones": ["EST", "CST", "MST", "PST"],
+        "culturalNotes": "Focus on multicultural appreciation and quality"
+      },
+      "Australia": {
+        "currency": "AUD",
+        "shippingAvailable": true,
+        "localizedPricing": "$950",
+        "searchTerms": ["luxury collectible", "Japanese art toy", "handcrafted sculpture"],
+        "platforms": ["Google.com.au", "Bing.com.au"],
+        "timeZones": ["AEDT", "ACDT", "AWDT"],
+        "culturalNotes": "Emphasize uniqueness and cultural connection to Asia"
+      }
+    },
+    "secondaryMarkets": {
+      "Singapore": {
+        "currency": "SGD",
+        "shippingAvailable": true,
+        "localizedPricing": "$850",
+        "searchTerms": ["luxury art toy", "Japanese collectible", "premium craft"],
+        "platforms": ["Google.com.sg"],
+        "culturalNotes": "Focus on investment value and regional cultural appreciation"
+      },
+      "Hong Kong": {
+        "currency": "HKD",
+        "shippingAvailable": true,
+        "localizedPricing": "HK$5,500",
+        "searchTerms": ["奢华艺术玩具", "日本工艺品", "高端收藏品"],
+        "platforms": ["Google.com.hk"],
+        "culturalNotes": "Emphasis on luxury lifestyle and cultural sophistication"
+      },
+      "Switzerland": {
+        "currency": "CHF",
+        "shippingAvailable": true,
+        "localizedPricing": "₣580",
+        "searchTerms": ["Luxus Kunstspielzeug", "Premium Sammlerobjekt"],
+        "platforms": ["Google.ch"],
+        "culturalNotes": "Focus on precision, quality, and exclusivity"
+      },
+      "Netherlands": {
+        "currency": "EUR",
+        "shippingAvailable": true,
+        "localizedPricing": "€600",
+        "searchTerms": ["luxe kunststuk", "premium verzamelobject"],
+        "platforms": ["Google.nl"],
+        "culturalNotes": "Emphasize design aesthetics and cultural appreciation"
+      }
+    },
+    "emergingMarkets": {
+      "UAE": {
+        "currency": "AED",
+        "shippingAvailable": true,
+        "localizedPricing": "AED 2,650",
+        "searchTerms": ["luxury art toy", "premium collectible", "Japanese craft"],
+        "platforms": ["Google.ae"],
+        "culturalNotes": "Focus on luxury lifestyle and cultural sophistication"
+      },
+      "South Korea": {
+        "currency": "KRW",
+        "shippingAvailable": true,
+        "localizedPricing": "₩850,000",
+        "searchTerms": ["럭셔리 아트 토이", "프리미엄 수집품", "일본 전통공예"],
+        "platforms": ["Google.co.kr", "Naver"],
+        "culturalNotes": "Emphasize cultural connection and premium quality"
+      }
+    }
+  },
+  "localSEOSignals": {
+    "businessListings": {
+      "googleMyBusiness": {
+        "locations": ["Tokyo", "New York", "London", "Paris", "Berlin"],
+        "categories": ["Art Gallery", "Craft Store", "Luxury Goods Store"],
+        "keywords": ["Japanese traditional craft", "luxury art toy", "handmade collectible"]
+      }
+    },
+    "localContent": {
+      "cityPages": ["Tokyo craft scene", "New York luxury collectors", "London art galleries"],
+      "regionalPartnerships": ["Local art galleries", "Cultural centers", "Museums"],
+      "localEvents": ["Art fairs", "Craft exhibitions", "Cultural festivals"]
+    }
+  },
+  "technicalImplementation": {
+    "hreflangTags": {
+      "implemented": true,
+      "languages": ["ja", "en", "zh", "fr", "ar"],
+      "regions": ["JP", "US", "UK", "DE", "FR", "CA", "AU", "SG", "HK"]
+    },
+    "geoIP": {
+      "redirect": false,
+      "localization": true,
+      "currencyDisplay": true,
+      "shippingInfo": true
+    },
+    "localizedURLs": {
+      "structure": "/[language]/[page]",
+      "languages": ["ja", "en", "zh", "fr", "ar"],
+      "canonical": "https://fomus.global/masukame/"
+    },
+    "schemaMarkup": {
+      "organization": {
+        "address": "Tokyo, Japan",
+        "serviceArea": ["Global", "International"],
+        "availableLanguage": ["Japanese", "English", "Chinese", "French", "Arabic"]
+      },
+      "product": {
+        "offers": {
+          "eligibleRegion": ["US", "UK", "DE", "FR", "CA", "AU", "JP", "SG", "HK", "CH", "NL", "BE", "AT", "SE", "NO", "DK"]
+        }
+      }
+    }
+  },
+  "contentLocalization": {
+    "culturalAdaptation": {
+      "US": "Freedom, individualism, investment mindset",
+      "UK": "Heritage, tradition, quality craftsmanship", 
+      "Germany": "Engineering excellence, precision, reliability",
+      "France": "Artistic merit, cultural sophistication, aesthetics",
+      "Japan": "Traditional values, cultural pride, craftsmanship",
+      "China": "Status symbol, cultural appreciation, investment",
+      "Arabia": "Luxury lifestyle, cultural sophistication, exclusivity"
+    },
+    "paymentMethods": {
+      "US": ["Credit Card", "PayPal", "Apple Pay"],
+      "UK": ["Credit Card", "PayPal", "Bank Transfer"],
+      "Germany": ["SEPA", "Credit Card", "PayPal"],
+      "Japan": ["Credit Card", "Bank Transfer", "Convenience Store"],
+      "China": ["Alipay", "WeChat Pay", "UnionPay"]
+    }
+  }
+}

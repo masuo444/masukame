@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "FOMUS",
+  "url": "https://fomus.global",
+  "logo": "https://fomus.global/masukame/images/logo.png",
+  "description": "FOMUS creates premium Japanese traditional craft art toys with international luxury appeal.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "JP"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": ["Japanese", "English", "Chinese", "French", "Arabic"]
+  },
+  "sameAs": [
+    "https://twitter.com/FOMUS_official"
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Product",
+      "name": "MASUKAME Classic Edition",
+      "category": "Luxury Art Toy",
+      "brand": {
+        "@type": "Brand",
+        "name": "FOMUS"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "600",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/LimitedAvailability",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingDestination": [
+            {
+              "@type": "DefinedRegion",
+              "addressCountry": ["US", "GB", "DE", "FR", "IT", "ES", "CA", "AU", "JP", "SG", "HK", "CH", "NL", "BE", "AT", "SE", "NO", "DK", "KR", "TW", "AE", "SA"]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
