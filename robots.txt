@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fomus.global/masukame/sitemap.xml
+
+# Allow crawling of all important pages
+Allow: /ja/
+Allow: /en/
+Allow: /zh/
+Allow: /fr/
+Allow: /ar/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Disallow temporary or admin files
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*.log$
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Special instructions for specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

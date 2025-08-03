@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main Language Selection Page -->
+  <url>
+    <loc>https://fomus.global/masukame/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fomus.global/masukame/ja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fomus.global/masukame/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://fomus.global/masukame/zh/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fomus.global/masukame/fr/"/>
+  </url>
+
+  <!-- Japanese Pages -->
+  <url>
+    <loc>https://fomus.global/masukame/ja/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fomus.global/masukame/ja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fomus.global/masukame/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://fomus.global/masukame/zh/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fomus.global/masukame/fr/"/>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/ja/about.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/ja/collection.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/ja/order.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/ja/contact.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- English Pages -->
+  <url>
+    <loc>https://fomus.global/masukame/en/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fomus.global/masukame/ja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fomus.global/masukame/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://fomus.global/masukame/zh/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fomus.global/masukame/fr/"/>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/en/about.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/en/collection.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/en/order.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/en/contact.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Chinese Pages -->
+  <url>
+    <loc>https://fomus.global/masukame/zh/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fomus.global/masukame/ja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fomus.global/masukame/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://fomus.global/masukame/zh/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fomus.global/masukame/fr/"/>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/zh/about.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/zh/collection.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/zh/order.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/zh/contact.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- French Pages -->
+  <url>
+    <loc>https://fomus.global/masukame/fr/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://fomus.global/masukame/ja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://fomus.global/masukame/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://fomus.global/masukame/zh/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://fomus.global/masukame/fr/"/>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/fr/about.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/fr/collection.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/fr/order.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://fomus.global/masukame/fr/contact.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Special Pages -->
+  <url>
+    <loc>https://fomus.global/masukame/collaboration-guide.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
