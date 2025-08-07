@@ -1156,6 +1156,15 @@ footer::before {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
   .nav-menu {
     position: fixed;
     top: 100%;
@@ -1193,6 +1202,9 @@ footer::before {
   
   .container {
     padding: 0 var(--spacing-sm);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
   }
   
   .grid-2,
@@ -1202,6 +1214,8 @@ footer::before {
   
   section {
     padding: var(--spacing-lg) 0;
+    width: 100%;
+    overflow-x: hidden;
   }
 }
 
