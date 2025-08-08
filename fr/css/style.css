@@ -1296,11 +1296,19 @@ footer::before {
   }
   
   /* Perfect title display - iPhone 16 optimized */
-  .hero-title-masukame, .title-japanese {
-    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
-    white-space: nowrap;
-    letter-spacing: 0.06em;
+  .hero-title-masukame, .title-japanese, .logo, 
+  h2.section-title-modern, .section-title-modern {
+    font-size: clamp(1.2rem, 3.5vw, 1.8rem) !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.06em !important;
     text-align: center;
+  }
+  
+  /* Navigation logo specific */
+  .logo {
+    font-size: clamp(1.0rem, 3vw, 1.4rem) !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.05em !important;
   }
   
   /* Perfect video section */
@@ -1328,11 +1336,17 @@ footer::before {
 
 @media (max-width: 480px) {
   /* Perfect small screen layout - iPhone 16 optimized */
-  .hero-title-masukame,
-  .title-japanese {
-    font-size: 1.1rem;
-    white-space: nowrap;
-    letter-spacing: 0.04em;
+  .hero-title-masukame, .title-japanese, .logo, 
+  h2.section-title-modern, .section-title-modern {
+    font-size: 1.1rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.04em !important;
+  }
+  
+  .logo {
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.03em !important;
   }
   
   .container {
@@ -1358,20 +1372,32 @@ footer::before {
 
 /* iPhone 16 series specific optimizations */
 @media (max-width: 430px) {
-  .hero-title-masukame,
-  .title-japanese {
-    font-size: 1.0rem;
-    white-space: nowrap;
-    letter-spacing: 0.03em;
+  .hero-title-masukame, .title-japanese, .logo, 
+  h2.section-title-modern, .section-title-modern {
+    font-size: 1.0rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.03em !important;
+  }
+  
+  .logo {
+    font-size: 0.85rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.02em !important;
   }
 }
 
 @media (max-width: 393px) {
-  .hero-title-masukame,
-  .title-japanese {
-    font-size: 0.95rem;
-    white-space: nowrap;
-    letter-spacing: 0.02em;
+  .hero-title-masukame, .title-japanese, .logo, 
+  h2.section-title-modern, .section-title-modern {
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.02em !important;
+  }
+  
+  .logo {
+    font-size: 0.8rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.01em !important;
   }
 }
 
