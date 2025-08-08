@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VFDEPKDDW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2VFDEPKDDW');
+    </script>
     <title>オーダー - MASUKAME by FOMUS</title>
     <meta name="description" content="MASUKAMEオーダーページ。縁起を贈る特別なアート作品。日本の伝統工芸と現代アートの融合。">
     <meta name="keywords" content="MASUKAME, オーダー, アート作品, 伝統工芸, 枡, 亀, 縁起物">
@@ -203,5 +212,41 @@
     </footer>
 
     <script src="js/script.js"></script>
+    
+    <!-- Enhanced eCommerce Tracking -->
+    <script>
+        // Track product view
+        gtag('event', 'view_item', {
+            currency: 'EUR',
+            value: 600,
+            items: [{
+                item_id: 'masukame-classic',
+                item_name: 'MASUKAME Classic Edition',
+                category: 'Luxury Art Toy',
+                quantity: 1,
+                price: 600
+            }]
+        });
+        
+        // Track when user shows interest in ordering
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderButtons = document.querySelectorAll('a[href*="contact"], .btn');
+            orderButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    gtag('event', 'begin_checkout', {
+                        currency: 'EUR',
+                        value: 600,
+                        items: [{
+                            item_id: 'masukame-classic',
+                            item_name: 'MASUKAME Classic Edition',
+                            category: 'Luxury Art Toy',
+                            quantity: 1,
+                            price: 600
+                        }]
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
