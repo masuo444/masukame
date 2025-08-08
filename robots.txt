@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://fomus.global/masukame/sitemap.xml
+Sitemap: https://masukame.fomusglobal.com/sitemap.xml
 
 # Allow crawling of all important pages
 Allow: /ja/

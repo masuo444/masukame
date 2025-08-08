@@ -2,8 +2,8 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "FOMUS",
-  "url": "https://fomus.global",
-  "logo": "https://fomus.global/masukame/images/logo.png",
+  "url": "https://masukame.fomusglobal.com",
+  "logo": "https://masukame.fomusglobal.com/images/logo.png",
   "description": "FOMUS creates premium Japanese traditional craft art toys with international luxury appeal.",
   "address": {
     "@type": "PostalAddress",
