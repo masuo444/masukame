@@ -1309,12 +1309,14 @@ footer::before {
     text-align: center;
   }
   
-  /* Perfect video section */
-  .video-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+  /* Perfect video section - no right gaps */
+  .video-container, .crafting-video {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    padding: 0 1rem !important;
+    box-sizing: border-box !important;
   }
   
   .video-wrapper {
@@ -1324,11 +1326,27 @@ footer::before {
     margin: 0 auto;
   }
   
-  /* Perfect full-width sections */
+  /* Perfect full-width sections - no right gaps */
   .founder-message-fullwidth {
-    width: 100%;
-    margin: 0;
-    padding: var(--spacing-xl) 1rem;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    padding: var(--spacing-xl) 1rem !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Fix video content specifically */
+  .masukame-video {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Fix about section container */
+  .about-content-grid {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
