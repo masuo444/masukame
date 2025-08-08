@@ -15,17 +15,32 @@
     "availableLanguage": ["Japanese", "English", "Chinese", "French", "Arabic"]
   },
   "sameAs": [
-    "https://twitter.com/FOMUS_official"
+    "https://twitter.com/FOMUS_official",
+    "https://facebook.com/FOMUS_official",
+    "https://instagram.com/FOMUS_official",
+    "https://linkedin.com/company/fomus"
   ],
   "makesOffer": {
     "@type": "Offer",
     "itemOffered": {
       "@type": "Product",
       "name": "MASUKAME Classic Edition",
-      "category": "Luxury Art Toy",
+      "description": "Premium Japanese traditional craft luxury art toy. Handcrafted wooden figures by master artisans combining 'Masu' (prosperity) and 'Turtle' (longevity) symbols.",
+      "category": "Art > Sculptures > Figurines",
+      "sku": "masukame-classic",
+      "image": "https://masukame.fomusglobal.com/images/ogp-masukame.jpg",
       "brand": {
         "@type": "Brand",
-        "name": "FOMUS"
+        "name": "FOMUS",
+        "logo": "https://masukame.fomusglobal.com/images/logo.png"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "FOMUS",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "JP"
+        }
       },
       "offers": {
         "@type": "Offer",
