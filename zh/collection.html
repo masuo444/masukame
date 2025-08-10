@@ -12,6 +12,7 @@
 
       gtag('config', 'G-2VFDEPKDDW');
     </script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <title>收藏系列 - MASUKAME by FOMUS</title>
     <meta name="description" content="MASUKAME的产品阵容。展示基础造型、合作版MASUKAME和企业合作作品。从会员专属销售到独一无二的艺术品。">
     <meta name="keywords" content="MASUKAME, 收藏, 基础造型, 合作, 企业合作, 艺术雕塑, 限量版">
@@ -95,7 +96,12 @@
                             </p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 0.5rem;">※完全订单生产</p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 1rem;">※每位顾客限购一件</p>
-                            <a href="https://example-order-site.com" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                            <stripe-buy-button
+                              buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                              publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                              class="btn btn-primary"
+                              style="padding: 0.8rem 1.5rem; font-size: 0.9rem;"
+                            ></stripe-buy-button>
                         </div>
                     </div>
                 </div>
@@ -112,7 +118,12 @@
                     <div class="card">
                         <h3>MASUKAME 经典版</h3>
                         <p>完全订单生产。为您的空间带来好运与繁荣的特别作品。</p>
-                        <a href="https://example-order-site.com" class="btn btn-primary" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                        <stripe-buy-button
+                          buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                          publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                          class="btn btn-primary"
+                          style="margin-top: 1rem;"
+                        ></stripe-buy-button>
                     </div>
                 </div>
             </div>

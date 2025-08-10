@@ -12,6 +12,7 @@
 
       gtag('config', 'G-2VFDEPKDDW');
     </script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <title>オーダー - MASUKAME by FOMUS</title>
     <meta name="description" content="MASUKAMEオーダーページ。縁起を贈る特別なアート作品。日本の伝統工芸と現代アートの融合。">
     <meta name="keywords" content="MASUKAME, オーダー, アート作品, 伝統工芸, 枡, 亀, 縁起物">
@@ -133,7 +134,11 @@
                             </div>
                             
                             <div style="margin-top: 2rem;">
-                                <a href="mailto:fomus@gmail.com?subject=MASUKAME Classic Edition購入希望" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem; text-decoration: none; display: inline-block;">購入する</a>
+                                <stripe-buy-button
+                                  buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                                  publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                                  style="padding: 1rem 2rem; font-size: 1.1rem; text-decoration: none; display: inline-block;"
+                                ></stripe-buy-button>
                             </div>
                         </div>
                     </div>

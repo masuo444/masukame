@@ -12,6 +12,7 @@
 
       gtag('config', 'G-2VFDEPKDDW');
     </script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <title>المجموعة - MASUKAME by FOMUS</title>
     <meta name="description" content="تشكيلة منتجات MASUKAME. تشمل التماثيل الأساسية وأعمال MASUKAME التعاونية والتعاون مع الشركات. من المبيعات الحصرية للأعضاء إلى الأعمال الفنية الفريدة.">
     <meta name="keywords" content="MASUKAME, مجموعة, تمثال أساسي, تعاون, تعاون الشركات, تمثال فني, إصدار محدود">
@@ -143,7 +144,12 @@
                             </p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 0.5rem;">※إنتاج حسب الطلب</p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 1rem;">※قطعة واحدة لكل عميل</p>
-                            <a href="https://example-order-site.com" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                            <stripe-buy-button
+                              buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                              publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                              class="btn btn-primary"
+                              style="padding: 0.8rem 1.5rem; font-size: 0.9rem;"
+                            ></stripe-buy-button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +166,12 @@
                     <div class="card">
                         <h3>MASUKAME الإصدار الكلاسيكي</h3>
                         <p>متاح للطلب للأعضاء فقط. قطعة خاصة تجلب الحظ السعيد والازدهار لمساحتك.</p>
-                        <a href="https://example-order-site.com" class="btn btn-primary" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                        <stripe-buy-button
+                          buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                          publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                          class="btn btn-primary"
+                          style="margin-top: 1rem;"
+                        ></stripe-buy-button>
                     </div>
                 </div>
             </div>

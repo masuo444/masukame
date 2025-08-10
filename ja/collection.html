@@ -12,6 +12,8 @@
 
       gtag('config', 'G-2VFDEPKDDW');
     </script>
+    <!-- Stripe Buy Button -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <title>MASUKAME コレクション | 高級アートトイ・日本伝統工芸フィギュア 850€</title>
     <meta name="description" content="日本伝統工芸の高級アートトイMASUKAME クラシック・エディション。職人手作りの木製フィギュア850€（税込）、メンバーシップ会員600€。限定生産・シリアルナンバー付き。コレクター向けプレミアム作品。">
     <meta name="keywords" content="MASUKAME, 高級アートトイ, 日本伝統工芸, 木製フィギュア, 職人手作り, 限定生産, シリアルナンバー, コレクタブル, プレミアムアート, 600ユーロ, ハンドクラフト, 日本製, 伝統技術, アートコレクション, 高級ギフト, インテリアアート, 縁起物, 枡, 亀">
@@ -142,7 +144,10 @@
                             </p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 0.5rem;">※完全受注生産</p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 1rem;">※おひとりさま１点まで</p>
-                            <a href="https://example-order-site.com" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                            <stripe-buy-button
+                              buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                              publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                            ></stripe-buy-button>
                         </div>
                     </div>
                 </div>
@@ -159,7 +164,11 @@
                     <div class="card">
                         <h3>MASUKAME クラシック・エディション</h3>
                         <p>会員限定でご注文いただけます。あなたの空間に幸運と繁栄をもたらす特別な一品です。</p>
-                        <a href="https://example-order-site.com" class="btn btn-primary" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                        <stripe-buy-button
+                          buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                          publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                          style="margin-top: 1rem;"
+                        ></stripe-buy-button>
                     </div>
                 </div>
             </div>

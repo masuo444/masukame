@@ -12,6 +12,7 @@
 
       gtag('config', 'G-2VFDEPKDDW');
     </script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <title>コレクション - MASUKAME by FOMUS</title>
     <meta name="description" content="MASUKAMEの販売ラインナップ。素体、コラボレーション枡ガメ、企業コラボ枡ガメをご紹介。会員限定販売から一点物作品まで。">
     <meta name="keywords" content="MASUKAME, コレクション, 素体, コラボレーション, 企業コラボ, アートフィギュア, 限定版">
@@ -91,7 +92,11 @@
                                 600€<span style="font-size: 0.9rem; font-weight: normal;">（税込）</span>
                             </p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 1rem;">※FOMUSメンバー限定販売</p>
-                            <a href="https://example-order-site.com" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                            <stripe-buy-button
+                              buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                              publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                              style="padding: 0.8rem 1.5rem; font-size: 0.9rem;"
+                            ></stripe-buy-button>
                         </div>
                     </div>
                 </div>
@@ -108,7 +113,11 @@
                     <div class="card">
                         <h3>MASUKAME クラシック・エディション</h3>
                         <p>会員限定でご注文いただけます。あなたの空間に幸運と繁栄をもたらす特別な一品です。</p>
-                        <a href="https://example-order-site.com" class="btn btn-primary" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                        <stripe-buy-button
+                          buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                          publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                          style="margin-top: 1rem;"
+                        ></stripe-buy-button>
                     </div>
                 </div>
             </div>

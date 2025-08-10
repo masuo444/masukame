@@ -12,6 +12,7 @@
 
       gtag('config', 'G-2VFDEPKDDW');
     </script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     <title>Collection - MASUKAME by FOMUS</title>
     <meta name="description" content="La gamme de produits MASUKAME. Présentant les figurines de base, les MASUKAME collaboratifs et les pièces de collaboration d'entreprise. Des ventes exclusives aux membres aux œuvres d'art uniques.">
     <meta name="keywords" content="MASUKAME, collection, figurine de base, collaboration, collaboration d'entreprise, figurine d'art, édition limitée">
@@ -143,7 +144,12 @@
                             </p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 0.5rem;">※Production sur commande</p>
                             <p style="font-size: 0.8rem; color: var(--color-stone); margin-bottom: 1rem;">※Limité à une pièce par client</p>
-                            <a href="https://example-order-site.com" class="btn btn-primary" style="padding: 0.8rem 1.5rem; font-size: 0.9rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                            <stripe-buy-button
+                              buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                              publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                              class="btn btn-primary"
+                              style="padding: 0.8rem 1.5rem; font-size: 0.9rem;"
+                            ></stripe-buy-button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +166,12 @@
                     <div class="card">
                         <h3>MASUKAME Édition Classique</h3>
                         <p>Disponible à la commande pour les membres uniquement. Une pièce spéciale qui apporte bonne fortune et prospérité à votre espace.</p>
-                        <a href="https://example-order-site.com" class="btn btn-primary" style="margin-top: 1rem;" target="_blank" rel="noopener noreferrer">購入する</a>
+                        <stripe-buy-button
+                          buy-button-id="buy_btn_1RuaRxKLpMIAHdShWBS2c15G"
+                          publishable-key="pk_live_51QAYFPKLpMIAHdSh5IbPLMsvZWiaEHqayl4w8kvvlcm2AJlbZ3rFXrGkl0UayowH77aflks8E7iESNf4uUd6hx5L00XdZNKtFe"
+                          class="btn btn-primary"
+                          style="margin-top: 1rem;"
+                        ></stripe-buy-button>
                     </div>
                 </div>
             </div>
