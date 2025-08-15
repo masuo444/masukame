@@ -48,12 +48,31 @@
         <nav class="container">
             <a href="#home" class="logo">MASUKAME</a>
             <ul class="nav-menu">
-                <li><a href="#home" class="active">首页</a></li>
-                <li><a href="about.html">关于</a></li>
+                <li><a href="index.html" class="active">主页</a></li>
+                <li><a href="story.html">故事</a></li>
+                <li><a href="editions.html">版本</a></li>
+                <li><a href="provenance.html">溯源</a></li>
                 <li><a href="order.html">订购</a></li>
                 <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
-                <li><a href="../index.html" style="color: #6c757d;">🌐 语言选择</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-button" aria-label="选择语言" onclick="toggleLanguageMenu()">
+                    <span class="lang-current">中文</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="/ja/" class="lang-option">日本語</a>
+                    <a href="/en/" class="lang-option">English</a>
+                    <a href="/fr/" class="lang-option">Français</a>
+                    <a href="/zh/" class="lang-option active">中文</a>
+                    <a href="/ar/" class="lang-option">العربية</a>
+                </div>
+            </div>
+            
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -229,8 +248,7 @@
                             作为室内装饰点缀空间，作为礼物也非常受欢迎。
                             完全订单生产 - 每位顾客限购一件。
                         </p>
-                        <p><strong>价格：€850（含税）</strong></p>
-                        <p><strong>会员价：€600</strong></p>
+                        <p><strong>价格：$2,000起</strong></p>
                         <a href="collection.html" class="btn">查看详情</a>
                     </div>
                     <div class="card">
@@ -314,5 +332,29 @@
     </footer>
 
     <script src="js/script.js"></script>
+    
+    <!-- Language Switcher Script -->
+    <script>
+        function toggleLanguageMenu() {
+            const dropdown = document.getElementById('langDropdown');
+            const button = document.querySelector('.lang-button');
+            
+            dropdown.classList.toggle('show');
+            button.classList.toggle('active');
+            
+            // Close when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.language-switcher')) {
+                    dropdown.classList.remove('show');
+                    button.classList.remove('active');
+                }
+            });
+        }
+        
+        // Prevent closing when clicking on the button itself
+        document.querySelector('.lang-button').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
 </body>
 </html>

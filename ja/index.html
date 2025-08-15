@@ -40,13 +40,13 @@
     <meta name="twitter:site" content="@FOMUS_official">
     <meta name="twitter:creator" content="@FOMUS_official">
     <meta name="twitter:label1" content="Price">
-    <meta name="twitter:data1" content="€850">
+    <meta name="twitter:data1" content="$2,000">
     <meta name="twitter:label2" content="Availability">
     <meta name="twitter:data2" content="Limited Edition">
     
     <!-- LinkedIn -->
     <meta property="linkedin:title" content="MASUKAME by FOMUS - 日本伝統工芸の新しい形">
-    <meta property="linkedin:description" content="日本の伝統工芸技術で作られた高級アートトイ。職人手作りの木製フィギュア €850（メンバー：€600）- 限定生産・コレクター向けプレミアム作品。">
+    <meta property="linkedin:description" content="日本の伝統工芸技術で作られた高級木彫彫刻。職人手作りの木製アート作品 $2,000から - 限定生産・コレクター向けプレミアム作品。">
     <meta property="linkedin:image" content="https://masukame.fomusglobal.com/images/masukame-social-media.png">
     
     <!-- Pinterest -->
@@ -146,12 +146,31 @@
         <nav class="container">
             <a href="#home" class="logo">MASUKAME</a>
             <ul class="nav-menu">
-                <li><a href="#home" class="active">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="story.html">STORY</a></li>
+                <li><a href="editions.html">EDITIONS</a></li>
+                <li><a href="provenance.html">PROVENANCE</a></li>
                 <li><a href="order.html">ORDER</a></li>
                 <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
-                <li><a href="../index.html" style="color: #6c757d;">🌐 言語選択</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-button" aria-label="言語を選択" onclick="toggleLanguageMenu()">
+                    <span class="lang-current">日本語</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="/ja/" class="lang-option active">日本語</a>
+                    <a href="/en/" class="lang-option">English</a>
+                    <a href="/fr/" class="lang-option">Français</a>
+                    <a href="/zh/" class="lang-option">中文</a>
+                    <a href="/ar/" class="lang-option">العربية</a>
+                </div>
+            </div>
+            
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -166,6 +185,16 @@
             <div class="hero-image-container">
                 <img src="images/hero-background.jpg" alt="MASUKAMEアート作品 - 自然に調和する日本の伝統美" class="hero-main-image">
             </div>
+            
+            <!-- Scroll Indicator -->
+            <button class="scroll-indicator" onclick="document.getElementById('intro').scrollIntoView({behavior: 'smooth'})" aria-label="下のセクションにスクロール" tabindex="0">
+                <div class="scroll-text">下にスクロール</div>
+                <div class="scroll-arrow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+                        <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </button>
         </section>
         
         <!-- Intro Section -->
@@ -195,9 +224,12 @@
                         </div>
                         
                         <div class="intro-actions-premium">
-                            <a href="about.html" class="btn-premium primary">
-                                <span class="btn-text">Discover MASUKAME</span>
+                            <a href="story.html" class="btn-premium primary">
+                                <span class="btn-text">物語を知る</span>
                                 <span class="btn-accent"></span>
+                            </a>
+                            <a href="editions.html" class="btn-premium secondary">
+                                <span class="btn-text">エディションを見る</span>
                             </a>
                         </div>
                     </div>
@@ -296,16 +328,6 @@
                     </div>
                 </div>
                 
-                <!-- Full Width Founder Message -->
-                <div class="founder-message-fullwidth">
-                    <div class="quote-mark-large">"</div>
-                    <p class="founder-quote">
-                        MASUKAMEは、特別な瞬間を彩るアート作品です。
-                        大切な人への贈り物として、限定品としての価値を持ち、
-                        生涯にわたる思い出となる体験をお届けします。
-                    </p>
-                    <cite class="founder-signature">FOMUS 創設者　MaSU</cite>
-                </div>
             </div>
         </section>
 
@@ -329,8 +351,7 @@
                             インテリアとして空間を彩り、贈り物としても大変喜ばれます。
                             完全受注生産・おひとりさま１点まで。
                         </p>
-                        <p><strong>価格：€850（税込）</strong></p>
-                        <p style="color: var(--color-gold); font-size: 0.95rem;"><strong>メンバーシップ会員価格：€600（税込）</strong></p>
+                        <p><strong>価格：$2,000から</strong></p>
                         <a href="collection.html" class="btn">詳細を見る</a>
                     </div>
                     <div class="card">
@@ -368,37 +389,33 @@
                             <div class="nav-line"></div>
                         </div>
                         <div class="nav-content">
-                            <h3>MASUKAMEを深く知る</h3>
-                            <p>縁起物「枡」と「亀」の融合という独創的なコンセプト、日本の伝統技術と現代デザインの美しい調和をご紹介します。</p>
-                            <a href="about.html" class="elegant-btn">ABOUT</a>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="nav-item">
-                        <div class="nav-visual">
-                            <div class="nav-icon">🤝</div>
-                            <div class="nav-line"></div>
-                        </div>
-                        <div class="nav-content">
-                            <h3>コラボレーション</h3>
-                            <p>企業やアーティストとの協業により、唯一無二の特別な作品を創造します。</p>
-                            <span class="elegant-btn" style="opacity: 0.6; cursor: not-allowed;">準備中</span>
+                            <h3>物語を知る</h3>
+                            <p>MASU（繁栄）とKAME（長寿）の融合。日本の伝統工芸と現代アートが出会った物語をお聞きください。</p>
+                            <a href="story.html" class="elegant-btn">STORY</a>
                         </div>
                     </div>
                     
                     <div class="nav-item">
                         <div class="nav-visual">
-                            <div class="nav-icon">💬</div>
+                            <div class="nav-icon">🎨</div>
                             <div class="nav-line"></div>
                         </div>
                         <div class="nav-content">
-                            <h3>お問い合わせ</h3>
-                            <p>MASUKAMEへのお問い合わせは、fomus.official@gmail.com またはInstagramで対応いたします。</p>
-                            <div style="display: flex; gap: 1rem; justify-content: center;">
-                                <a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer" class="elegant-btn">INSTAGRAM</a>
-                                <a href="mailto:fomus.official@gmail.com" class="elegant-btn">CONTACT</a>
-                            </div>
+                            <h3>エディション</h3>
+                            <p>クラシック（$2,000）、コラボレーション（$4,000）、記念碑的な特注作品まで。すべてNFT証明書付き。</p>
+                            <a href="editions.html" class="elegant-btn">EDITIONS</a>
+                        </div>
+                    </div>
+                    
+                    <div class="nav-item">
+                        <div class="nav-visual">
+                            <div class="nav-icon">🔗</div>
+                            <div class="nav-line"></div>
+                        </div>
+                        <div class="nav-content">
+                            <h3>双資産システム</h3>
+                            <p>実体彫刻とNFT証明書。一緒にまたは分離して保持可能な革新的なブロックチェーン認証システム。</p>
+                            <a href="provenance.html" class="elegant-btn">PROVENANCE</a>
                         </div>
                     </div>
                 </div>
@@ -416,5 +433,29 @@
     </footer>
 
     <script src="js/script.js"></script>
+    
+    <!-- Language Switcher Script -->
+    <script>
+        function toggleLanguageMenu() {
+            const dropdown = document.getElementById('langDropdown');
+            const button = document.querySelector('.lang-button');
+            
+            dropdown.classList.toggle('show');
+            button.classList.toggle('active');
+            
+            // Close when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.language-switcher')) {
+                    dropdown.classList.remove('show');
+                    button.classList.remove('active');
+                }
+            });
+        }
+        
+        // Prevent closing when clicking on the button itself
+        document.querySelector('.lang-button').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
 </body>
 </html>

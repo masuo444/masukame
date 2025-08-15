@@ -1230,6 +1230,13 @@ footer::before {
     font-size: 2rem;
   }
   
+  .container {
+    padding: 0 var(--spacing-sm);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
   .grid-2,
   .grid-3 {
     grid-template-columns: 1fr;
@@ -1341,12 +1348,6 @@ footer::before {
     gap: 1rem !important;
     padding: 0 1rem !important;
   }
-  
-  /* Fix about section container */
-  .about-content-grid {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
 }
 
 @media (max-width: 480px) {
@@ -1374,6 +1375,10 @@ footer::before {
   
   .hero-content .description {
     font-size: 1rem;
+  }
+  
+  .card {
+    padding: var(--spacing-md);
   }
 }
 
@@ -2342,8 +2347,8 @@ footer::before {
   background: linear-gradient(135deg, var(--color-forest) 0%, var(--color-deep-green) 30%, var(--color-accent) 70%, var(--color-emerald) 100%);
   color: var(--color-white);
   padding: var(--spacing-xxl) 0;
-  margin: var(--spacing-xxl) 0 0;
-  width: 100%;
+  margin: var(--spacing-xxl) calc(-50vw + 50%) 0;
+  width: 100vw;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -3030,14 +3035,6 @@ footer::before {
     justify-content: center;
     min-height: 44px;
   }
-  
-  /* Extra small screens - keep MASUKAME on single line */
-  .hero-title-masukame,
-  .title-japanese {
-    font-size: 1.5rem !important;
-    white-space: nowrap !important;
-    letter-spacing: 0.08em !important;
-  }
 }
 
 /* Additional Mobile Optimizations */
@@ -3110,45 +3107,6 @@ footer::before {
   /* Tap Highlight */
   a, button {
     -webkit-tap-highlight-color: rgba(44, 85, 48, 0.1);
-  }
-  
-  /* Fix MASUKAME title - keep on single line */
-  .hero-title-masukame {
-    font-size: clamp(1.8rem, 5vw, 2.5rem) !important;
-    white-space: nowrap !important;
-    letter-spacing: 0.1em !important;
-  }
-  
-  .title-japanese {
-    font-size: clamp(1.8rem, 5vw, 2.5rem) !important;
-    white-space: nowrap !important;
-  }
-  
-  /* Fix video container right gap */
-  .video-container {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  .video-wrapper {
-    width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-  
-  /* Fix content below video */
-  .founder-message-fullwidth {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: var(--spacing-xl) 1rem !important;
-  }
-  
-  .content-section {
-    width: 100% !important;
-    padding: 0 1rem !important;
-    margin: 0 !important;
   }
 }"
 

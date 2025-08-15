@@ -37,13 +37,13 @@
     <meta name="twitter:site" content="@FOMUS_official">
     <meta name="twitter:creator" content="@FOMUS_official">
     <meta name="twitter:label1" content="Price">
-    <meta name="twitter:data1" content="€850">
+    <meta name="twitter:data1" content="$2,000">
     <meta name="twitter:label2" content="Availability">
     <meta name="twitter:data2" content="Limited Edition">
     
     <!-- LinkedIn -->
     <meta property="linkedin:title" content="MASUKAME by FOMUS - L'Art Traditionnel Japonais rencontre le Luxe Moderne">
-    <meta property="linkedin:description" content="Pièce d'art de luxe traditionnelle japonaise haut de gamme. Figurines en bois façonnées à la main par des artisans maîtres. €850 (Prix membres : €600) - Collections en édition limitée pour les passionnés d'art du monde entier et les musées.">
+    <meta property="linkedin:description" content="Pièce d'art de luxe traditionnelle japonaise haut de gamme. Sculptures en bois façonnées à la main par des artisans maîtres. $2,000 à partir de - Collections en édition limitée pour les passionnés d'art du monde entier et les musées.">
     <meta property="linkedin:image" content="https://masukame.fomusglobal.com/images/ogp.png">
     
     <!-- Pinterest -->
@@ -71,12 +71,31 @@
         <nav class="container">
             <a href="#home" class="logo">MASUKAME</a>
             <ul class="nav-menu">
-                <li><a href="#home" class="active">ACCUEIL</a></li>
-                <li><a href="about.html">À PROPOS</a></li>
+                <li><a href="index.html" class="active">ACCUEIL</a></li>
+                <li><a href="story.html">HISTOIRE</a></li>
+                <li><a href="editions.html">ÉDITIONS</a></li>
+                <li><a href="provenance.html">PROVENANCE</a></li>
                 <li><a href="order.html">COMMANDER</a></li>
                 <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
-                <li><a href="../index.html" style="color: #6c757d;">🌐 Langue</a></li>
             </ul>
+            
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-button" aria-label="Sélectionner la langue" onclick="toggleLanguageMenu()">
+                    <span class="lang-current">FR</span>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="/ja/" class="lang-option">日本語</a>
+                    <a href="/en/" class="lang-option">English</a>
+                    <a href="/fr/" class="lang-option active">Français</a>
+                    <a href="/zh/" class="lang-option">中文</a>
+                    <a href="/ar/" class="lang-option">العربية</a>
+                </div>
+            </div>
+            
             <div class="mobile-menu-toggle">
                 <span></span>
                 <span></span>
@@ -253,8 +272,7 @@
                             Il décore les espaces comme décoration intérieure et est très apprécié en cadeau.
                             Production sur commande - Limité à une pièce par client.
                         </p>
-                        <p><strong>Prix : €850 (TTC)</strong></p>
-                        <p><em>Prix membres : €600</em></p>
+                        <p><strong>Prix : À partir de $2,000</strong></p>
                         <a href="collection.html" class="btn">Voir les détails</a>
                     </div>
                     <div class="card">
@@ -338,5 +356,29 @@
     </footer>
 
     <script src="js/script.js"></script>
+    
+    <!-- Language Switcher Script -->
+    <script>
+        function toggleLanguageMenu() {
+            const dropdown = document.getElementById('langDropdown');
+            const button = document.querySelector('.lang-button');
+            
+            dropdown.classList.toggle('show');
+            button.classList.toggle('active');
+            
+            // Close when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.language-switcher')) {
+                    dropdown.classList.remove('show');
+                    button.classList.remove('active');
+                }
+            });
+        }
+        
+        // Prevent closing when clicking on the button itself
+        document.querySelector('.lang-button').addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
+    </script>
 </body>
 </html>

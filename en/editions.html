@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      // Pixel ID will be initialized via config.js
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1234567890123456&ev=PageView&noscript=1"
+    /></noscript>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VFDEPKDDW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2VFDEPKDDW', {
+        custom_map: {'custom_parameter_1': 'language'},
+        language: 'en'
+      });
+    </script>
+    
+    <!-- SEO Meta Tags -->
+    <title>MASUKAME Editions — Classic & Collaboration</title>
+    <meta name="description" content="Explore MASUKAME editions: Classic Edition from $2,000 and Collaboration series from $4,000. All with NFT certificates.">
+    <meta name="keywords" content="MASUKAME editions, luxury sculpture collection, classic edition, collaboration series, monumental commission, hinoki sculpture">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MASUKAME Editions — Classic & Collaboration">
+    <meta property="og:description" content="Discover all MASUKAME editions: Classic ($2,000) and Collaboration ($4,000). Luxury wooden sculptures with NFT certificates.">
+    <meta property="og:type" content="product.group">
+    <meta property="og:url" content="https://masukame.fomusglobal.com/en/editions.html">
+    <meta property="og:image" content="https://masukame.fomusglobal.com/images/ogp.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MASUKAME Editions — Classic & Collaboration">
+    <meta name="twitter:description" content="Luxury wooden sculpture collection with blockchain certificates. Starting from $2,000 USD.">
+    <meta name="twitter:image" content="https://masukame.fomusglobal.com/images/ogp.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://masukame.fomusglobal.com/en/editions.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProductGroup",
+      "name": "MASUKAME Editions",
+      "description": "Luxury wooden sculpture editions handcrafted from Japanese Hinoki cypress",
+      "brand": {
+        "@type": "Brand",
+        "name": "MASUKAME"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "FOMUS"
+      },
+      "hasVariant": [
+        {
+          "@type": "Product",
+          "name": "Classic Edition",
+          "offers": {
+            "@type": "Offer",
+            "price": "3000",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "Product", 
+          "name": "Collaboration Edition",
+          "offers": {
+            "@type": "Offer",
+            "price": "6000",
+            "priceCurrency": "USD"
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://masukame.fomusglobal.com/en/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Editions",
+        "item": "https://masukame.fomusglobal.com/en/editions.html"
+      }]
+    }
+    </script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/components.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MASUKAME</a>
+            
+            <nav class="nav-menu" role="navigation">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="story.html" class="nav-link">STORY</a>
+                <a href="craft.html" class="nav-link">CRAFT</a>
+                <a href="editions.html" class="nav-link active">EDITIONS</a>
+                <a href="provenance.html" class="nav-link">PROVENANCE</a>
+                <a href="exhibitions.html" class="nav-link">EXHIBITIONS</a>
+                <a href="collaborations.html" class="nav-link">COLLABORATIONS</a>
+                <a href="purchase.html" class="nav-link">PURCHASE</a>
+            </nav>
+            
+            <div class="nav-cta">
+                <select class="currency-selector" aria-label="Currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AED">AED</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <a href="purchase.html" class="btn btn-primary btn-sm">Purchase</a>
+                <a href="index.html#concierge" class="btn btn-secondary btn-sm">Concierge</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-lg" style="padding-top: 6rem; background: linear-gradient(135deg, var(--color-ivory) 0%, white 100%);">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h1 class="heading-display">MASUKAME Editions</h1>
+                <p class="text-lg" style="max-width: 800px; margin: 0 auto;">
+                    From accessible Classic pieces to exclusive Collaboration series. 
+                    Each edition maintains our commitment to exceptional craftsmanship and blockchain authentication.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classic Edition -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div>
+                    <img 
+                        src="images/masukame-base-figure.jpg" 
+                        alt="MASUKAME Classic Edition"
+                        style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius-2xl);"
+                        loading="eager"
+                    />
+                </div>
+                
+                <div>
+                    <div class="badge badge-available mb-4">Now Available</div>
+                    <h2 class="heading-2">Classic Edition</h2>
+                    <p class="text-lg mb-6">
+                        The foundation of the MASUKAME collection. Pure, essential, and timeless. 
+                        Each Classic edition sculpture embodies the perfect balance of masu and kame symbolism.
+                    </p>
+                    
+                    <div class="card mb-8" style="padding: var(--space-8); background-color: var(--color-ivory-dark);">
+                        <div class="grid grid-2" style="gap: var(--space-6);">
+                            <div>
+                                <h4 class="heading-4 mb-3">Specifications</h4>
+                                <ul class="text-sm" style="list-style: none; line-height: var(--leading-relaxed);">
+                                    <li class="mb-1">• <strong>Material:</strong> Japanese Hinoki cypress</li>
+                                    <li class="mb-1">• <strong>Dimensions:</strong> Approx. 10cm</li>
+                                    <li class="mb-1">• <strong>Finish:</strong> Oil or Urethane (your choice)</li>
+                                    <li class="mb-1">• <strong>Edition Size:</strong> 001–999</li>
+                                    <li class="mb-1">• <strong>Lead Time:</strong> 6–8 weeks</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="heading-4 mb-3">Included</h4>
+                                <ul class="text-sm" style="list-style: none; line-height: var(--leading-relaxed);">
+                                    <li class="mb-1">• ✓ Serial number engraved</li>
+                                    <li class="mb-1">• ✓ Paper certificate of authenticity</li>
+                                    <li class="mb-1">• ✓ NFT certificate on Ethereum</li>
+                                    <li class="mb-1">• ✓ Wooden presentation box</li>
+                                    <li class="mb-1">• ✓ Worldwide insured shipping</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: var(--space-8); margin-bottom: var(--space-8);">
+                        <div class="price-display">
+                            <span data-edition="classic" data-show-from="false">$3,000</span>
+                        </div>
+                        <div class="text-caption">
+                            Made-to-order • Serial numbered
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                        <a href="purchase.html" class="btn btn-primary btn-lg">
+                            Apply to Purchase
+                        </a>
+                        <a href="story.html" class="btn btn-secondary">
+                            Learn the Story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Edition -->
+    <section class="section" style="background-color: var(--color-ivory-dark);">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div>
+                    <div class="badge badge-limited mb-4">Limited Series</div>
+                    <h2 class="heading-2">Collaboration Edition</h2>
+                    <p class="text-lg mb-6">
+                        Exclusive partnerships with renowned artists, designers, and cultural institutions. 
+                        Each collaboration brings fresh interpretation while honoring MASUKAME's essence.
+                    </p>
+                    
+                    <div class="card mb-8" style="padding: var(--space-8);">
+                        <h4 class="heading-4 mb-6" style="color: var(--color-gold-dark);">Featured Collaborations</h4>
+                        
+                        <div style="display: grid; gap: var(--space-6);">
+                            <div style="padding: var(--space-4); border-left: 4px solid var(--color-gold); background-color: var(--color-ivory-dark);">
+                                <h5 style="font-weight: var(--weight-semibold); margin-bottom: var(--space-2);">Artist Series 2024</h5>
+                                <p class="text-sm">Contemporary interpretations by emerging Japanese artists, each bringing unique cultural perspectives to the traditional form.</p>
+                            </div>
+                            
+                            <div style="padding: var(--space-4); border-left: 4px solid var(--color-gold); background-color: var(--color-ivory-dark);">
+                                <h5 style="font-weight: var(--weight-semibold); margin-bottom: var(--space-2);">Cultural Heritage Collection</h5>
+                                <p class="text-sm">Partnership with Japanese cultural institutions to create museum-quality pieces with historical significance.</p>
+                            </div>
+                            
+                            <div style="padding: var(--space-4); border-left: 4px solid var(--color-gold); background-color: var(--color-ivory-dark);">
+                                <h5 style="font-weight: var(--weight-semibold); margin-bottom: var(--space-2);">Designer Editions</h5>
+                                <p class="text-sm">Limited runs with luxury brands and renowned designers, exploring MASUKAME in contemporary contexts.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: var(--space-8); margin-bottom: var(--space-8);">
+                        <div class="price-display">
+                            <span data-edition="collaboration" data-show-from="true">$6,000</span>
+                        </div>
+                        <div class="text-caption">
+                            Limited availability • Artist signed
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                        <a href="index.html#concierge" class="btn btn-accent btn-lg">
+                            Contact Concierge
+                        </a>
+                        <a href="exhibitions.html" class="btn btn-secondary">
+                            View Exhibitions
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <img 
+                        src="images/masukame-collaboration.jpg" 
+                        alt="MASUKAME Collaboration Edition example"
+                        style="width: 100%; height: 500px; object-fit: cover; border-radius: var(--radius-2xl);"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Comparison Table -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="heading-2">Edition Comparison</h2>
+                <p class="text-lg">Choose the MASUKAME edition that best fits your collection and space.</p>
+            </div>
+            
+            <div class="card card-luxury" style="padding: 0; overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background-color: var(--color-hinoki-light);">
+                            <th style="padding: var(--space-6); text-align: left; font-weight: var(--weight-semibold); border-bottom: 2px solid var(--color-hinoki);">Feature</th>
+                            <th style="padding: var(--space-6); text-align: center; font-weight: var(--weight-semibold); border-bottom: 2px solid var(--color-hinoki);">Classic</th>
+                            <th style="padding: var(--space-6); text-align: center; font-weight: var(--weight-semibold); border-bottom: 2px solid var(--color-hinoki);">Collaboration</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light);">Price Range</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;" data-edition="classic">$2,000</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;" data-edition="collaboration">$4,000+</td>
+                        </tr>
+                        <tr style="background-color: rgba(247, 244, 239, 0.3);">
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light);">Edition Size</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">001–999</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">5–25 per series</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light);">Lead Time</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">6–8 weeks</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">8–12 weeks</td>
+                        </tr>
+                        <tr style="background-color: rgba(247, 244, 239, 0.3);">
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light);">NFT Certificate</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">✓</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light);">Artist Signature</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">—</td>
+                            <td style="padding: var(--space-4) var(--space-6); border-bottom: 1px solid var(--color-hinoki-light); text-align: center;">✓</td>
+                        </tr>
+                        <tr style="background-color: rgba(247, 244, 239, 0.3);">
+                            <td style="padding: var(--space-4) var(--space-6);">Custom Design</td>
+                            <td style="padding: var(--space-4) var(--space-6); text-align: center;">—</td>
+                            <td style="padding: var(--space-4) var(--space-6); text-align: center;">Limited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-ivory) 0%, white 100%);">
+        <div class="container-narrow text-center">
+            <h2 class="heading-2">Ready to Begin?</h2>
+            <p class="text-lg mb-8">
+                Whether you're seeking your first MASUKAME or adding to an existing collection, 
+                we're here to help you find the perfect piece.
+            </p>
+            
+            <div style="display: flex; justify-content: center; gap: var(--space-6); flex-wrap: wrap;">
+                <a href="purchase.html" class="btn btn-primary btn-lg">
+                    Apply to Purchase
+                </a>
+                <a href="index.html#concierge" class="btn btn-accent btn-lg">
+                    Speak to Concierge
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--color-ivory-dark); padding: var(--space-20) 0 var(--space-12);">
+        <div class="container">
+            <div class="text-center mb-8">
+                <p class="text-caption" style="color: var(--color-gold-dark);">
+                    All prices anchored in USD. Other currencies shown as approximate.<br>
+                    We can invoice in EUR for EU events. UAE clients may pay in USD or AED. Taxes & duties depend on destination.
+                </p>
+            </div>
+            
+            <div class="text-center">
+                <div style="display: flex; justify-content: center; gap: var(--space-6); margin-bottom: var(--space-4);">
+                    <a href="terms.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">Terms</a>
+                    <a href="privacy.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">Privacy</a>
+                    <a href="nft-disclaimer.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">NFT Disclaimer</a>
+                </div>
+                
+                <div class="text-caption">
+                    © 2024 FOMUS. All rights reserved. MASUKAME by FOMUS.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/config.js"></script>
+    <script src="assets/currency.js"></script>
+</body>
+</html>

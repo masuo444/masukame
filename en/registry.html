@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2VFDEPKDDW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2VFDEPKDDW', {
+        custom_map: {'custom_parameter_1': 'language'},
+        language: 'en'
+      });
+    </script>
+    
+    <!-- SEO Meta Tags -->
+    <title>MASUKAME Registry — Verify Authenticity & Provenance</title>
+    <meta name="description" content="Official MASUKAME registry to verify serial numbers, NFT certificates, and ownership history. Track your luxury wooden sculpture's provenance on-chain.">
+    <meta name="keywords" content="MASUKAME registry, NFT verification, sculpture authenticity, provenance tracking, certificate of authenticity">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MASUKAME Registry — Verify Authenticity & Provenance">
+    <meta property="og:description" content="Official registry to verify MASUKAME luxury wooden sculptures and NFT certificates of authenticity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://masukame.fomusglobal.com/en/registry.html">
+    <meta property="og:image" content="https://masukame.fomusglobal.com/images/ogp.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MASUKAME Registry — Verify Authenticity & Provenance">
+    <meta name="twitter:description" content="Official registry to verify MASUKAME luxury wooden sculptures and NFT certificates of authenticity.">
+    <meta name="twitter:image" content="https://masukame.fomusglobal.com/images/ogp.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://masukame.fomusglobal.com/en/registry.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MASUKAME Registry",
+      "description": "Official registry to verify MASUKAME luxury wooden sculptures and NFT certificates",
+      "applicationCategory": "Blockchain Registry",
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "FOMUS"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://masukame.fomusglobal.com/en/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Registry",
+        "item": "https://masukame.fomusglobal.com/en/registry.html"
+      }]
+    }
+    </script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/components.css">
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="nav-header">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">MASUKAME</a>
+            
+            <nav class="nav-menu" role="navigation">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="story.html" class="nav-link">STORY</a>
+                <a href="craft.html" class="nav-link">CRAFT</a>
+                <a href="editions.html" class="nav-link">EDITIONS</a>
+                <a href="provenance.html" class="nav-link">PROVENANCE</a>
+                <a href="exhibitions.html" class="nav-link">EXHIBITIONS</a>
+                <a href="collaborations.html" class="nav-link">COLLABORATIONS</a>
+                <a href="purchase.html" class="nav-link">PURCHASE</a>
+            </nav>
+            
+            <div class="nav-cta">
+                <select class="currency-selector" aria-label="Currency">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="AED">AED</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <a href="purchase.html" class="btn btn-primary btn-sm">Purchase</a>
+                <a href="index.html#concierge" class="btn btn-secondary btn-sm">Concierge</a>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="nav-mobile-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Registry Search -->
+    <section class="section" style="padding-top: 6rem;">
+        <div class="container-narrow">
+            <div class="text-center mb-12">
+                <h1 class="heading-1">MASUKAME Registry</h1>
+                <p class="text-lg">
+                    Verify the authenticity and provenance of MASUKAME luxury wooden sculptures. 
+                    Search by Serial Number or Token ID.
+                </p>
+            </div>
+
+            <!-- Search Form -->
+            <div class="card" style="padding: var(--space-12); margin-bottom: var(--space-12);">
+                <div class="text-center mb-8">
+                    <h2 class="heading-3">Verify Authenticity</h2>
+                    <p class="text-subtitle">Enter your Serial Number or NFT Token ID to verify provenance</p>
+                </div>
+                
+                <form id="registry-search" style="max-width: 600px; margin: 0 auto;">
+                    <div class="form-group">
+                        <label for="search-query" class="form-label">Serial Number or Token ID</label>
+                        <input 
+                            type="text" 
+                            id="search-query" 
+                            name="query" 
+                            class="form-input" 
+                            placeholder="e.g., 001 or 0x1a2b3c4d"
+                            style="text-align: center; font-size: var(--text-lg);"
+                        >
+                        <div class="form-help text-caption mt-2">
+                            💡 Serial numbers are 3-digit format (001-999). Token IDs are hex format (0x...).
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Verify
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Search Results -->
+            <div id="search-results" style="display: none;">
+                <div class="card card-luxury" id="result-card" style="padding: var(--space-12);">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+
+            <!-- No Results -->
+            <div id="no-results" style="display: none;">
+                <div class="card" style="padding: var(--space-8); text-align: center; background-color: rgba(220, 38, 38, 0.05); border: 1px solid rgba(220, 38, 38, 0.2);">
+                    <h3 class="heading-4" style="color: #dc2626; margin-bottom: var(--space-4);">Not Found</h3>
+                    <p class="text-subtitle" style="color: #dc2626;">
+                        No MASUKAME sculpture found with that Serial Number or Token ID. 
+                        Please check your entry and try again.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Registry Information -->
+            <div class="grid grid-2" style="gap: var(--space-8); margin-top: var(--space-16);">
+                <div class="card" style="padding: var(--space-8);">
+                    <h3 class="heading-4 mb-6">About the Registry</h3>
+                    <ul class="text-sm" style="list-style: none; line-height: var(--leading-relaxed);">
+                        <li class="mb-2">• <strong>Immutable Records:</strong> All entries are blockchain-verified</li>
+                        <li class="mb-2">• <strong>Dual Ownership:</strong> Physical and NFT can be held separately</li>
+                        <li class="mb-2">• <strong>Transfer History:</strong> Complete provenance tracking</li>
+                        <li class="mb-2">• <strong>Privacy Protected:</strong> Wallet addresses are masked</li>
+                        <li class="mb-2">• <strong>Real-time Updates:</strong> Reflects current ownership status</li>
+                    </ul>
+                </div>
+                
+                <div class="card" style="padding: var(--space-8);">
+                    <h3 class="heading-4 mb-6">Registry Statistics</h3>
+                    <div class="grid grid-2" style="gap: var(--space-6); text-align: center;">
+                        <div>
+                            <div style="font-size: var(--text-3xl); font-weight: var(--weight-bold); color: var(--color-gold); margin-bottom: var(--space-2);" id="total-minted">127</div>
+                            <div class="text-caption">Total Minted</div>
+                        </div>
+                        
+                        <div>
+                            <div style="font-size: var(--text-3xl); font-weight: var(--weight-bold); color: var(--color-gold); margin-bottom: var(--space-2);" id="separated-ownership">2</div>
+                            <div class="text-caption">Separated Ownership</div>
+                        </div>
+                        
+                        <div>
+                            <div style="font-size: var(--text-3xl); font-weight: var(--weight-bold); color: var(--color-gold); margin-bottom: var(--space-2);" id="total-transfers">23</div>
+                            <div class="text-caption">NFT Transfers</div>
+                        </div>
+                        
+                        <div>
+                            <div style="font-size: var(--text-3xl); font-weight: var(--weight-bold); color: var(--color-gold); margin-bottom: var(--space-2);" id="countries">7</div>
+                            <div class="text-caption">Countries</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Notice -->
+            <div class="card mt-16" style="background: linear-gradient(135deg, var(--color-ivory) 0%, var(--color-hinoki-light) 100%); padding: var(--space-12);">
+                <h3 class="heading-3 text-center mb-8" style="color: var(--color-gold-dark);">Important Information</h3>
+                
+                <div class="grid grid-2" style="gap: var(--space-8);">
+                    <div>
+                        <h4 class="heading-4 mb-4">Ownership Types</h4>
+                        <ul class="text-sm" style="list-style: none; line-height: var(--leading-relaxed);">
+                            <li class="mb-2">• <strong>"Same":</strong> Physical and NFT held by same owner</li>
+                            <li class="mb-2">• <strong>Address shown:</strong> NFT and physical held separately</li>
+                            <li class="mb-2">• <strong>Masked addresses:</strong> Privacy protection (0xAb***91)</li>
+                            <li class="mb-2">• <strong>Transfer dates:</strong> When NFT last changed hands</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="heading-4 mb-4">Services & Rights</h4>
+                        <ul class="text-sm" style="list-style: none; line-height: var(--leading-relaxed);">
+                            <li class="mb-2">• <strong>Restoration:</strong> Available to physical sculpture owner</li>
+                            <li class="mb-2">• <strong>Insurance:</strong> Coverage applies to physical holder</li>
+                            <li class="mb-2">• <strong>Display Rights:</strong> Private use only, no commercial IP</li>
+                            <li class="mb-2">• <strong>Registry Updates:</strong> Automatic from blockchain data</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <p class="text-caption" style="color: var(--color-gold-dark);">
+                        For questions about registry entries or ownership verification, contact our 
+                        <a href="index.html#concierge" style="color: var(--color-gold-dark); font-weight: var(--weight-medium);">concierge team</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--color-ivory-dark); padding: var(--space-20) 0 var(--space-12);">
+        <div class="container">
+            <div class="text-center mb-8">
+                <p class="text-caption" style="color: var(--color-gold-dark);">
+                    All prices anchored in USD. Other currencies shown as approximate.<br>
+                    We can invoice in EUR for EU events. UAE clients may pay in USD or AED. Taxes & duties depend on destination.
+                </p>
+            </div>
+            
+            <div class="text-center">
+                <div style="display: flex; justify-content: center; gap: var(--space-6); margin-bottom: var(--space-4);">
+                    <a href="terms.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">Terms</a>
+                    <a href="privacy.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">Privacy</a>
+                    <a href="nft-disclaimer.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">NFT Disclaimer</a>
+                </div>
+                
+                <div class="text-caption">
+                    © 2024 FOMUS. All rights reserved. MASUKAME by FOMUS.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/config.js"></script>
+    <script src="assets/currency.js"></script>
+    <script src="assets/registry-api.js"></script>
+    
+    <!-- Registry Search Script -->
+    <script>
+        class MASUKAMERegistryUI {
+            constructor() {
+                this.registryAPI = null;
+                this.init();
+            }
+            
+            async init() {
+                // Wait for registry API to initialize
+                await this.waitForAPI();
+                this.bindEvents();
+                await this.updateStatistics();
+            }
+            
+            async waitForAPI() {
+                const maxWait = 5000; // 5 seconds
+                const startTime = Date.now();
+                
+                while (!window.MASUKAMERegistryAPI && (Date.now() - startTime < maxWait)) {
+                    await new Promise(resolve => setTimeout(resolve, 100));
+                }
+                
+                if (window.MASUKAMERegistryAPI) {
+                    this.registryAPI = window.MASUKAMERegistryAPI;
+                } else {
+                    console.error('Registry API failed to initialize');
+                }
+            }
+            
+            bindEvents() {
+                const form = document.getElementById('registry-search');
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    this.performSearch();
+                });
+                
+                const input = document.getElementById('search-query');
+                input.addEventListener('input', () => {
+                    this.hideResults();
+                });
+            }
+            
+            async performSearch() {
+                const query = document.getElementById('search-query').value.trim();
+                if (!query || !this.registryAPI) return;
+                
+                // Show loading state
+                this.showLoading();
+                
+                try {
+                    const result = await this.registryAPI.searchSculpture(query);
+                    
+                    if (result) {
+                        this.displayResult(result);
+                    } else {
+                        this.showNoResults();
+                    }
+                    
+                    // Track search
+                    gtag('event', 'registry_search', {
+                        'event_category': 'engagement',
+                        'event_label': query.length > 10 ? 'token_id' : 'serial'
+                    });
+                } catch (error) {
+                    console.error('Search failed:', error);
+                    this.showError();
+                }
+            }
+            
+            showLoading() {
+                const resultCard = document.getElementById('result-card');
+                resultCard.innerHTML = `
+                    <div class="text-center" style="padding: var(--space-12);">
+                        <div style="font-size: 3rem; color: var(--color-gold); margin-bottom: var(--space-4);">🔍</div>
+                        <h3 class="heading-4">Searching Registry...</h3>
+                        <p class="text-subtitle">Verifying authenticity on blockchain</p>
+                    </div>
+                `;
+                this.showResults();
+            }
+            
+            showError() {
+                const resultCard = document.getElementById('result-card');
+                resultCard.innerHTML = `
+                    <div class="text-center" style="padding: var(--space-12);">
+                        <div style="font-size: 3rem; color: #dc2626; margin-bottom: var(--space-4);">⚠️</div>
+                        <h3 class="heading-4" style="color: #dc2626;">Search Error</h3>
+                        <p class="text-subtitle">Unable to connect to registry. Please try again.</p>
+                    </div>
+                `;
+                this.showResults();
+            }
+            
+            displayResult(sculpture) {
+                const resultCard = document.getElementById('result-card');
+                const mintDate = new Date(sculpture.mint_date);
+                const lastTransfer = sculpture.last_transfer ? new Date(sculpture.last_transfer) : null;
+                
+                // Determine ownership status
+                let ownershipStatus = '';
+                let ownershipClass = '';
+                if (sculpture.physical_owner === 'Same') {
+                    ownershipStatus = 'Unified Ownership';
+                    ownershipClass = 'badge-available';
+                } else {
+                    ownershipStatus = 'Separated Ownership';
+                    ownershipClass = 'badge-limited';
+                }
+                
+                // Status badge
+                let statusBadge = '';
+                switch (sculpture.status) {
+                    case 'Delivered':
+                        statusBadge = '<div class="badge badge-available">Delivered</div>';
+                        break;
+                    case 'In Transit':
+                        statusBadge = '<div class="badge badge-limited">In Transit</div>';
+                        break;
+                    case 'In Production':
+                        statusBadge = '<div class="badge" style="background-color: rgba(59, 130, 246, 0.1); color: #2563eb;">In Production</div>';
+                        break;
+                }
+                
+                resultCard.innerHTML = `
+                    <div class="text-center mb-8">
+                        <h2 class="heading-2" style="color: var(--color-gold-dark);">Verified Authentic</h2>
+                        <div class="badge ${ownershipClass}" style="margin-top: var(--space-4);">${ownershipStatus}</div>
+                    </div>
+                    
+                    <div class="grid grid-2" style="gap: var(--space-8); margin-bottom: var(--space-8);">
+                        <div>
+                            <h3 class="heading-4 mb-4">Sculpture Details</h3>
+                            <div style="display: grid; gap: var(--space-3);">
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Serial Number</span>
+                                    <span class="text-sm">#${sculpture.serial}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Edition</span>
+                                    <span class="text-sm">${sculpture.edition}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Material</span>
+                                    <span class="text-sm">${sculpture.material}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Finish</span>
+                                    <span class="text-sm">${sculpture.finish}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Craft Year</span>
+                                    <span class="text-sm">${sculpture.craft_year}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0;">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Status</span>
+                                    <span>${statusBadge}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="heading-4 mb-4">Ownership & NFT</h3>
+                            <div style="display: grid; gap: var(--space-3);">
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Token ID</span>
+                                    <span class="text-sm" style="font-family: monospace; font-size: var(--text-xs);">${sculpture.token_id}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">NFT Holder</span>
+                                    <span class="text-sm" style="font-family: monospace;">${sculpture.nft_holder}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Physical Owner</span>
+                                    <span class="text-sm" style="font-family: monospace;">${sculpture.physical_owner}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-hinoki-light);">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Mint Date</span>
+                                    <span class="text-sm">${mintDate.toLocaleDateString()}</span>
+                                </div>
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0; ${lastTransfer ? 'border-bottom: 1px solid var(--color-hinoki-light);' : ''}">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Last Transfer</span>
+                                    <span class="text-sm">${lastTransfer ? lastTransfer.toLocaleDateString() : 'Never'}</span>
+                                </div>
+                                ${sculpture.location ? `
+                                <div style="display: flex; justify-content: space-between; padding: var(--space-2) 0;">
+                                    <span class="text-sm" style="font-weight: var(--weight-medium);">Location</span>
+                                    <span class="text-sm">${sculpture.location}</span>
+                                </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    </div>
+                    
+                    ${sculpture.notes ? `
+                    <div class="card" style="background-color: var(--color-hinoki-light); padding: var(--space-6); margin-top: var(--space-8);">
+                        <h4 class="heading-4 mb-3" style="color: var(--color-gold-dark);">Notes</h4>
+                        <p class="text-sm">${sculpture.notes}</p>
+                    </div>
+                    ` : ''}
+                    
+                    ${sculpture.tracking ? `
+                    <div class="text-center mt-8">
+                        <p class="text-sm" style="color: var(--color-gold-dark);">
+                            <strong>Tracking:</strong> ${sculpture.tracking}
+                        </p>
+                    </div>
+                    ` : ''}
+                `;
+                
+                this.showResults();
+            }
+            
+            showResults() {
+                document.getElementById('search-results').style.display = 'block';
+                document.getElementById('no-results').style.display = 'none';
+                
+                // Scroll to results
+                document.getElementById('search-results').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+            
+            showNoResults() {
+                document.getElementById('search-results').style.display = 'none';
+                document.getElementById('no-results').style.display = 'block';
+                
+                // Scroll to no results
+                document.getElementById('no-results').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+            
+            hideResults() {
+                document.getElementById('search-results').style.display = 'none';
+                document.getElementById('no-results').style.display = 'none';
+            }
+            
+            async updateStatistics() {
+                if (!this.registryAPI) return;
+                
+                try {
+                    const stats = await this.registryAPI.getStatistics();
+                    
+                    // Update DOM elements
+                    document.getElementById('total-minted').textContent = stats.totalMinted || 0;
+                    document.getElementById('separated-ownership').textContent = stats.separatedOwnership || 0;
+                    document.getElementById('total-transfers').textContent = stats.totalTransfers || 0;
+                    document.getElementById('countries').textContent = stats.countries || 0;
+                } catch (error) {
+                    console.error('Failed to update statistics:', error);
+                    // Keep default values
+                }
+            }
+        }
+        
+        // Initialize registry UI when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            new MASUKAMERegistryUI();
+        });
+    </script>
+</body>
+</html>
