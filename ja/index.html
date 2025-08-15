@@ -148,8 +148,6 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="story.html">STORY</a></li>
-                <li><a href="editions.html">EDITIONS</a></li>
-                <li><a href="provenance.html">PROVENANCE</a></li>
                 <li><a href="order.html">ORDER</a></li>
                 <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
             </ul>
@@ -181,243 +179,81 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="home" class="hero-photo">
-            <div class="hero-image-container">
-                <img src="images/hero-background.jpg" alt="MASUKAMEアート作品 - 自然に調和する日本の伝統美" class="hero-main-image">
-            </div>
-            
-            <!-- Scroll Indicator -->
-            <button class="scroll-indicator" onclick="document.getElementById('intro').scrollIntoView({behavior: 'smooth'})" aria-label="下のセクションにスクロール" tabindex="0">
-                <div class="scroll-text">下にスクロール</div>
-                <div class="scroll-arrow">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-                        <path d="M12 5V19M12 19L19 12M12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            </button>
-        </section>
-        
-        <!-- Intro Section -->
-        <section id="intro" class="intro-section-premium">
+        <section id="home" class="hero">
             <div class="container">
-                <div class="intro-content-premium">
-                    <div class="intro-main">
-                        <h1 class="intro-title-premium">
-                            <span class="title-accent">M</span><span class="title-main">ASU</span><span class="title-accent">K</span><span class="title-main">AME</span>
-                        </h1>
-                        
-                        <div class="intro-subtitle-container">
-                            <div class="subtitle-line left"></div>
-                            <p class="intro-tagline-premium">
-                                Japanese Fortune Meets Modern Art
-                            </p>
-                            <div class="subtitle-line right"></div>
-                        </div>
-                        
-                        <div class="intro-description-premium">
-                            <p class="description-primary">
-                                繁栄と長寿の象徴が融合した唯一無二のアートピース
-                            </p>
-                            <p class="description-secondary">
-                                自然と調和する日本の伝統美
-                            </p>
-                        </div>
-                        
-                        <div class="intro-actions-premium">
-                            <a href="story.html" class="btn-premium primary">
-                                <span class="btn-text">物語を知る</span>
-                                <span class="btn-accent"></span>
-                            </a>
-                            <a href="editions.html" class="btn-premium secondary">
-                                <span class="btn-text">エディションを見る</span>
-                            </a>
-                        </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">MASUKAME</h1>
+                    <p class="hero-subtitle">日本の伝統工芸が生み出す木製アートフィギュア</p>
+                    <p class="hero-description">繁栄の「枡」と長寿の「亀」が融合した特別な作品</p>
+                    <div class="hero-actions">
+                        <a href="story.html" class="btn-primary">物語を知る</a>
+                        <a href="order.html" class="btn-secondary">注文する</a>
                     </div>
-                    
-                    <!-- Background Pattern -->
-                    <div class="intro-pattern">
-                        <div class="pattern-element pattern-1"></div>
-                        <div class="pattern-element pattern-2"></div>
-                        <div class="pattern-element pattern-3"></div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/masukame-base-figure.jpg" alt="MASUKAME - 日本の職人による手作り木製フィギュア" loading="eager">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">MASUKAMEについて</h2>
+                <p class="section-description">
+                    日本の縁起物「枝（繁栄）」と「亀（長寿）」を融合した現代アート作品。
+                    熟練の職人が一つひとつ手作りで制作し、シリアルナンバー付きで品質を保証しています。
+                </p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3 class="feature-title">職人の手作り</h3>
+                        <p class="feature-description">日本の熟練職人による完全手作業制作</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">厳選素材</h3>
+                        <p class="feature-description">国産木材を厳選して使用</p>
+                    </div>
+                    <div class="feature">
+                        <h3 class="feature-title">品質保証</h3>
+                        <p class="feature-description">シリアルナンバー入りで真正性を確保</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About MASUKAME Section -->
-        <section id="about-masukame" class="section-modern">
+        <!-- Product Section -->
+        <section class="product">
             <div class="container">
-                <div class="section-header-modern">
-                    <span class="section-number">01</span>
-                    <h2 class="section-title-modern">MASUKAMEとは</h2>
-                    <div class="section-line"></div>
-                </div>
+                <h2 class="section-title">コレクション</h2>
                 
-                <div class="about-content-grid">
-                    <div class="about-text">
-                        <div class="text-highlight">
-                            <p class="intro-text">
-                                MASUKAMEは、日本の縁起物「枡（繁栄）」と「亀（長寿）」を融合した、
-                                現代のアート作品です。熟練職人による手作業で一点ずつ制作され、
-                                シリアルナンバーによる品質保証付きです。
-                            </p>
-                        </div>
-                        
-                        <div class="features-modern">
-                            <div class="feature-modern">
-                                <div class="feature-visual">
-                                    <div class="feature-icon-modern">🏺</div>
-                                    <div class="feature-accent"></div>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>職人手作り</h4>
-                                    <p>日本の熟練職人による完全手作業制作</p>
-                                </div>
-                            </div>
-                            <div class="feature-modern">
-                                <div class="feature-visual">
-                                    <div class="feature-icon-modern">🌸</div>
-                                    <div class="feature-accent"></div>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>国産木材</h4>
-                                    <p>厳選された国産木材を使用</p>
-                                </div>
-                            </div>
-                            <div class="feature-modern">
-                                <div class="feature-visual">
-                                    <div class="feature-icon-modern">🔢</div>
-                                    <div class="feature-accent"></div>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>品質保証</h4>
-                                    <p>シリアルナンバー入りで真正性を確保</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/masukame-base-figure.jpg" alt="MASUKAME クラシック・エディション">
                     </div>
-                    
-                    <div class="about-visual">
-                        <div class="crafting-video">
-                            <div class="video-header">
-                                <h3>職人による制作工程</h3>
-                                <p>実際の制作現場をご覧ください</p>
-                            </div>
-                            <div class="video-container">
-                                <video 
-                                    controls 
-                                    poster="images/masukame-crafting-1.jpg"
-                                    preload="metadata"
-                                    class="masukame-video"
-                                >
-                                    <source src="../videos/IMG_7669.mov" type="video/mp4">
-                                    <source src="../videos/IMG_7669.mov" type="video/quicktime">
-                                    お使いのブラウザは動画の再生に対応していません。
-                                </video>
-                                <div class="video-play-overlay">
-                                    <div class="play-button">
-                                        <svg width="60" height="60" viewBox="0 0 60 60">
-                                            <circle cx="30" cy="30" r="30" fill="rgba(44, 85, 48, 0.9)"/>
-                                            <polygon points="22,15 22,45 45,30" fill="white"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- Product Showcase Section -->
-        <section id="showcase" class="section-modern showcase-section">
-            <div class="container">
-                <div class="section-header-modern">
-                    <span class="section-number">02</span>
-                    <h2 class="section-title-modern">COLLECTION PREVIEW</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="grid grid-2">
-                    <div class="card">
-                        <div class="product-image">
-                            <img src="images/masukame-base-figure.jpg" alt="MASUKAME素体 - 職人による手作り制作">
-                        </div>
-                        <h3>クラシック・エディション（Classic Edition）</h3>
-                        <p>
-                            MASUKAMEの原点にして完成形。
-                            日本の職人が一つひとつ丁寧に仕上げた、あたたかみのある木製オブジェです。
-                            インテリアとして空間を彩り、贈り物としても大変喜ばれます。
-                            完全受注生産・おひとりさま１点まで。
+                    <div class="product-info">
+                        <h3 class="product-title">クラシック・エディション</h3>
+                        <p class="product-description">
+                            MASUKAMEの原点にして完成形。日本の職人が一つひとつ丁寧に仕上げた、
+                            温かみのある木製オブジェです。
                         </p>
-                        <p><strong>価格：$2,000から</strong></p>
-                        <a href="collection.html" class="btn">詳細を見る</a>
-                    </div>
-                    <div class="card">
-                        <div class="product-image">
-                            <img src="images/masukame-collaboration.jpg" alt="コラボレーション枡ガメ - アーティストとの共同制作">
-                        </div>
-                        <h3>コラボレーション枡ガメ</h3>
-                        <p>
-                            著名なアーティストやデザイナーとのコラボレーションによる一点物作品。
-                            独創的なデザインと伝統技術の融合により生まれる、唯一無二のアートピース。
-                        </p>
-                        <span class="btn" style="opacity: 0.6; cursor: not-allowed;">準備中</span>
+                        <p class="product-price">価格：$2,000から</p>
+                        <a href="order.html" class="btn-primary">詳細・注文</a>
                     </div>
                 </div>
             </div>
         </section>
 
-
-        <!-- Navigation Section -->
-        <section id="navigation" style="background: linear-gradient(135deg, var(--color-white) 0%, var(--color-mist) 100%); padding: var(--spacing-xxl) 0;">
+        <!-- Contact Section -->
+        <section class="contact">
             <div class="container">
-                <div class="nav-hero" style="text-align: center; margin-bottom: var(--spacing-xl);">
-                    <h2 style="font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 2.8rem); color: var(--color-sumi); margin-bottom: var(--spacing-sm); font-weight: 400; letter-spacing: 0.08em;">
-                        BEGIN YOUR MASUKAME JOURNEY
-                    </h2>
-                    <p style="font-size: 1.2rem; color: var(--color-stone); opacity: 0.9; max-width: 500px; margin: 0 auto;">
-                        あなただけの特別な一品との出会いを
-                    </p>
-                </div>
-                
-                <div class="elegant-nav-grid">
-                    <div class="nav-item">
-                        <div class="nav-visual">
-                            <div class="nav-icon">📖</div>
-                            <div class="nav-line"></div>
-                        </div>
-                        <div class="nav-content">
-                            <h3>物語を知る</h3>
-                            <p>MASU（繁栄）とKAME（長寿）の融合。日本の伝統工芸と現代アートが出会った物語をお聞きください。</p>
-                            <a href="story.html" class="elegant-btn">STORY</a>
-                        </div>
-                    </div>
-                    
-                    <div class="nav-item">
-                        <div class="nav-visual">
-                            <div class="nav-icon">🎨</div>
-                            <div class="nav-line"></div>
-                        </div>
-                        <div class="nav-content">
-                            <h3>エディション</h3>
-                            <p>クラシック（$2,000）、コラボレーション（$4,000）、記念碑的な特注作品まで。すべてNFT証明書付き。</p>
-                            <a href="editions.html" class="elegant-btn">EDITIONS</a>
-                        </div>
-                    </div>
-                    
-                    <div class="nav-item">
-                        <div class="nav-visual">
-                            <div class="nav-icon">🔗</div>
-                            <div class="nav-line"></div>
-                        </div>
-                        <div class="nav-content">
-                            <h3>双資産システム</h3>
-                            <p>実体彫刻とNFT証明書。一緒にまたは分離して保持可能な革新的なブロックチェーン認証システム。</p>
-                            <a href="provenance.html" class="elegant-btn">PROVENANCE</a>
-                        </div>
-                    </div>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-description">
+                    MASUKAMEに関するご質問は、お気軽にお問い合わせください。
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:fomus.official@gmail.com" class="btn-secondary">メールでお問い合わせ</a>
+                    <a href="https://www.instagram.com/masukame_official/" target="_blank" class="btn-secondary">Instagram</a>
                 </div>
             </div>
         </section>

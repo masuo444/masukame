@@ -164,9 +164,7 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">HOME</a></li>
                 <li><a href="story.html">STORY</a></li>
-                <li><a href="editions.html">EDITIONS</a></li>
-                <li><a href="provenance.html">PROVENANCE</a></li>
-                <li><a href="purchase.html">PURCHASE</a></li>
+                <li><a href="order.html">ORDER</a></li>
                 <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
             </ul>
             
@@ -196,278 +194,90 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="section-lg" style="padding-top: 6rem; min-height: 100vh; display: flex; align-items: center;">
+    <section id="home" class="hero">
         <div class="container">
-            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
-                <!-- Hero Content -->
-                <div>
-                    <h1 class="heading-display">
-                        Luxury Wooden Sculpture from Hinoki.
-                    </h1>
-                    <p class="text-lg mb-4">
-                        Where Masu (prosperity) meets Kame (longevity). Made-to-order character sculpture.
-                    </p>
-                    <p class="text-subtitle mb-8" style="font-size: var(--text-base); color: var(--color-hinoki-dark);">
-                        檜が香る、吉祥の彫刻。
-                    </p>
-                    
-                    <!-- Price & Availability -->
-                    <div class="card card-luxury mb-8" style="display: inline-block; padding: var(--space-6);">
-                        <div style="display: flex; align-items: center; gap: var(--space-6); flex-wrap: wrap;">
-                            <div class="price-display">
-                                <span class="price-from">From</span>
-                                <span data-edition="classic" data-show-from="false">$2,000</span>
-                            </div>
-                            <div class="text-caption">
-                                Lead 6–8 weeks
-                            </div>
-                            <div class="badge badge-limited">
-                                This month's capacity: 5 pieces
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- CTAs -->
-                    <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
-                        <a href="purchase.html" class="btn btn-primary btn-lg">
-                            Purchase
-                        </a>
-                        <a href="#concierge" class="btn btn-accent btn-lg">
-                            Concierge
-                        </a>
-                        <a href="story.html" class="btn btn-secondary btn-lg">
-                            Story & Craft
-                        </a>
-                    </div>
+            <div class="hero-content">
+                <h1 class="hero-title">MASUKAME</h1>
+                <p class="hero-subtitle">Luxury Wooden Sculpture from Japanese Hinoki</p>
+                <p class="hero-description">Where Masu (prosperity) meets Kame (longevity). Handcrafted art piece.</p>
+                <div class="hero-actions">
+                    <a href="story.html" class="btn-primary">Learn Our Story</a>
+                    <a href="order.html" class="btn-secondary">Place Order</a>
                 </div>
-                
-                <!-- Hero Visual -->
-                <div>
-                    <div style="position: relative;">
-                        <img 
-                            src="images/masukame-base-figure.jpg" 
-                            alt="MASUKAME Classic Edition - Luxury wooden sculpture from Hinoki cypress"
-                            style="width: 100%; height: auto; border-radius: var(--radius-2xl); box-shadow: var(--shadow-xl);"
-                            loading="eager"
-                        />
-                        <div style="position: absolute; top: var(--space-4); right: var(--space-4);">
-                            <div class="badge badge-exclusive">
-                                Serial #001–#999
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/masukame-base-figure.jpg" alt="MASUKAME Classic Edition - Luxury wooden sculpture from Hinoki cypress" loading="eager">
             </div>
         </div>
     </section>
 
-    <!-- Value Proposition Section -->
-    <section class="section" style="background-color: white;">
+    <!-- About Section -->
+    <section class="about">
         <div class="container">
-            <h2 class="heading-2 text-center mb-16">Crafted for the Discerning Collector</h2>
-            
-            <div class="grid grid-3" style="gap: var(--space-12);">
-                <div class="text-center">
-                    <div style="width: 80px; height: 80px; background-color: var(--color-hinoki-light); border-radius: var(--radius-full); margin: 0 auto var(--space-6); display: flex; align-items: center; justify-content: center;">
-                        <span style="font-size: var(--text-2xl); color: var(--color-gold);">檜</span>
-                    </div>
-                    <h3 class="heading-4">Hinoki Texture</h3>
-                    <p class="text-subtitle">Finely finished Japanese cypress, warm to the touch, built to age beautifully.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div style="width: 80px; height: 80px; background-color: var(--color-hinoki-light); border-radius: var(--radius-full); margin: 0 auto var(--space-6); display: flex; align-items: center; justify-content: center;">
-                        <span style="font-size: var(--text-2xl); color: var(--color-gold);">益亀</span>
-                    </div>
-                    <h3 class="heading-4">Auspicious Design</h3>
-                    <p class="text-subtitle">Masu for prosperity meets Kame for longevity, reimagined as a contemporary sculpture.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div style="width: 80px; height: 80px; background-color: var(--color-hinoki-light); border-radius: var(--radius-full); margin: 0 auto var(--space-6); display: flex; align-items: center; justify-content: center;">
-                        <span style="font-size: var(--text-2xl); color: var(--color-gold);">♦</span>
-                    </div>
-                    <h3 class="heading-4">Made-to-order</h3>
-                    <p class="text-subtitle">Each piece is crafted on request, serialized, and certified both on paper and on-chain.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Lifestyle Images -->
-    <section class="section" style="background-color: var(--color-ivory-dark);">
-        <div class="container">
-            <h2 class="heading-2 text-center mb-16">In Refined Spaces</h2>
-            
-            <div class="grid grid-2" style="gap: var(--space-8);">
-                <div>
-                    <img 
-                        src="images/masukame-nature.jpg" 
-                        alt="MASUKAME in traditional Japanese setting"
-                        style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-2xl);"
-                        loading="lazy"
-                    />
-                    <h3 class="heading-4 mt-6">Traditional Harmony</h3>
-                    <p class="text-subtitle">At home in spaces that honor Japanese aesthetics and natural materials.</p>
-                </div>
-                
-                <div>
-                    <img 
-                        src="images/masukame-product.jpg" 
-                        alt="MASUKAME in modern luxury interior"
-                        style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius-2xl);"
-                        loading="lazy"
-                    />
-                    <h3 class="heading-4 mt-6">Contemporary Luxury</h3>
-                    <p class="text-subtitle">Equally compelling in modern spaces where craftsmanship is celebrated.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Purchase Flow Preview -->
-    <section class="section">
-        <div class="container-narrow">
-            <h2 class="heading-2 text-center mb-16">Purchase Process</h2>
-            
-            <div class="card" style="background: linear-gradient(135deg, var(--color-ivory) 0%, white 100%); padding: var(--space-12);">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-8); flex-wrap: wrap; gap: var(--space-4);">
-                    <div style="display: flex; align-items: center; gap: var(--space-3);">
-                        <div style="width: 32px; height: 32px; background-color: var(--color-gold); color: var(--color-ink); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-weight: var(--weight-bold);">1</div>
-                        <span class="text-sm">Application</span>
-                    </div>
-                    <div style="flex: 1; height: 2px; background-color: var(--color-hinoki-light); margin: 0 var(--space-2);"></div>
-                    
-                    <div style="display: flex; align-items: center; gap: var(--space-3);">
-                        <div style="width: 32px; height: 32px; background-color: var(--color-gold); color: var(--color-ink); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-weight: var(--weight-bold);">2</div>
-                        <span class="text-sm">50% Deposit</span>
-                    </div>
-                    <div style="flex: 1; height: 2px; background-color: var(--color-hinoki-light); margin: 0 var(--space-2);"></div>
-                    
-                    <div style="display: flex; align-items: center; gap: var(--space-3);">
-                        <div style="width: 32px; height: 32px; background-color: var(--color-gold); color: var(--color-ink); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-weight: var(--weight-bold);">3</div>
-                        <span class="text-sm">NFT Issued</span>
-                    </div>
-                    <div style="flex: 1; height: 2px; background-color: var(--color-hinoki-light); margin: 0 var(--space-2);"></div>
-                    
-                    <div style="display: flex; align-items: center; gap: var(--space-3);">
-                        <div style="width: 32px; height: 32px; background-color: var(--color-gold); color: var(--color-ink); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-weight: var(--weight-bold);">4</div>
-                        <span class="text-sm">Craft 6–8 weeks</span>
-                    </div>
-                    <div style="flex: 1; height: 2px; background-color: var(--color-hinoki-light); margin: 0 var(--space-2);"></div>
-                    
-                    <div style="display: flex; align-items: center; gap: var(--space-3);">
-                        <div style="width: 32px; height: 32px; background-color: var(--color-gold); color: var(--color-ink); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-weight: var(--weight-bold);">5</div>
-                        <span class="text-sm">Balance & Ship</span>
-                    </div>
-                </div>
-                
-                <div class="text-center">
-                    <p class="text-subtitle mb-6">Insured worldwide delivery. Paper COA and NFT certificate included.</p>
-                    <a href="purchase.html" class="btn btn-primary">Begin Application</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Concierge Contact -->
-    <section id="concierge" class="section" style="background-color: var(--color-ink); color: var(--color-ivory);">
-        <div class="container-narrow text-center">
-            <h2 class="heading-2" style="color: var(--color-ivory); margin-bottom: var(--space-6);">Concierge Service</h2>
-            <p class="text-lg mb-8" style="color: var(--color-ivory); opacity: 0.9;">
-                For bespoke commissions, hotel collections, or any inquiries about MASUKAME, 
-                our concierge team is here to assist.
+            <h2 class="section-title">About MASUKAME</h2>
+            <p class="section-description">
+                A contemporary art piece that fuses Japanese lucky symbols "Masu" (prosperity) and "Kame" (longevity).
+                Each piece is handcrafted by skilled artisans and comes with serial number quality assurance.
             </p>
             
-            <div class="grid grid-2" style="gap: var(--space-8); max-width: 600px; margin: 0 auto;">
-                <div>
-                    <h3 class="heading-4" style="color: var(--color-gold);">Email</h3>
-                    <a href="mailto:concierge@fomusglobal.com" style="color: var(--color-ivory); text-decoration: none;">
-                        concierge@fomusglobal.com
-                    </a>
+            <div class="features">
+                <div class="feature">
+                    <h3 class="feature-title">Handcrafted</h3>
+                    <p class="feature-description">Completely handmade by skilled Japanese artisans</p>
                 </div>
-                <div>
-                    <h3 class="heading-4" style="color: var(--color-gold);">Response Time</h3>
-                    <span style="color: var(--color-ivory);">Within 24 hours</span>
+                <div class="feature">
+                    <h3 class="feature-title">Premium Materials</h3>
+                    <p class="feature-description">Made from carefully selected Japanese Hinoki cypress</p>
                 </div>
-            </div>
-            
-            <div class="mt-12">
-                <a href="mailto:concierge@fomusglobal.com" class="btn btn-accent btn-lg">Contact Concierge</a>
+                <div class="feature">
+                    <h3 class="feature-title">Quality Assured</h3>
+                    <p class="feature-description">Authenticity guaranteed with serial numbers</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer style="background-color: var(--color-ivory-dark); padding: var(--space-20) 0 var(--space-12);">
+    <!-- Product Section -->
+    <section class="product">
         <div class="container">
-            <div class="grid grid-4 mb-16">
-                <div>
-                    <h3 class="heading-4">MASUKAME</h3>
-                    <p class="text-subtitle">
-                        Luxury wooden sculptures from Japanese Hinoki cypress. 
-                        Made-to-order with NFT certificates of authenticity.
+            <h2 class="section-title">Collection</h2>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/masukame-base-figure.jpg" alt="MASUKAME Classic Edition">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Classic Edition</h3>
+                    <p class="product-description">
+                        The origin and perfection of MASUKAME. A warm wooden art object 
+                        carefully finished one by one by Japanese artisans.
                     </p>
-                </div>
-                
-                <div>
-                    <h4 class="heading-4">Explore</h4>
-                    <ul style="list-style: none;">
-                        <li><a href="story.html" style="color: var(--color-ink); text-decoration: none;">Story</a></li>
-                        <li><a href="craft.html" style="color: var(--color-ink); text-decoration: none;">Craft</a></li>
-                        <li><a href="editions.html" style="color: var(--color-ink); text-decoration: none;">Editions</a></li>
-                        <li><a href="provenance.html" style="color: var(--color-ink); text-decoration: none;">Provenance</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="heading-4">Services</h4>
-                    <ul style="list-style: none;">
-                        <li><a href="purchase.html" style="color: var(--color-ink); text-decoration: none;">Purchase</a></li>
-                        <li><a href="collaborations.html" style="color: var(--color-ink); text-decoration: none;">Collaborations</a></li>
-                        <li><a href="registry.html" style="color: var(--color-ink); text-decoration: none;">Registry</a></li>
-                        <li><a href="#concierge" style="color: var(--color-ink); text-decoration: none;">Concierge</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="heading-4">Follow</h4>
-                    <div style="display: flex; gap: var(--space-4);">
-                        <a href="https://instagram.com/masukame_official" style="color: var(--color-ink); text-decoration: none;">Instagram</a>
-                        <a href="https://tiktok.com/@masukame_official" style="color: var(--color-ink); text-decoration: none;">TikTok</a>
-                    </div>
-                    
-                    <div class="mt-6">
-                        <h5 style="font-weight: var(--weight-medium); margin-bottom: var(--space-2);">Newsletter</h5>
-                        <form style="display: flex; gap: var(--space-2);">
-                            <input type="email" placeholder="Email" class="form-input" style="flex: 1;" />
-                            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
-                        </form>
-                    </div>
+                    <p class="product-price">Price: From $2,000</p>
+                    <a href="order.html" class="btn-primary">Details & Order</a>
                 </div>
             </div>
-            
-            <!-- Legal Links -->
-            <div style="border-top: 1px solid var(--color-hinoki); padding-top: var(--space-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
-                <div style="display: flex; gap: var(--space-6); flex-wrap: wrap;">
-                    <a href="terms.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">Terms</a>
-                    <a href="privacy.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">Privacy</a>
-                    <a href="nft-disclaimer.html" style="color: var(--color-ink-soft); text-decoration: none; font-size: var(--text-sm);">NFT Disclaimer</a>
-                </div>
-                
-                <div class="text-caption">
-                    © 2024 FOMUS. All rights reserved. MASUKAME by FOMUS.
-                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-description">
+                For any inquiries about MASUKAME, please feel free to contact us.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:fomus.official@gmail.com" class="btn-secondary">Email Contact</a>
+                <a href="https://www.instagram.com/masukame_official/" target="_blank" class="btn-secondary">Instagram</a>
             </div>
-            
-            <!-- Pricing Notice -->
-            <div class="mt-8 text-center">
-                <p class="text-caption" style="color: var(--color-gold-dark);">
-                    All prices anchored in USD. Other currencies shown as approximate.
-                    <br>
-                    We can invoice in EUR for EU events. UAE clients may pay in USD or AED. 
-                    Taxes & duties depend on destination.
-                </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 FOMUS. All rights reserved. | MASUKAME by FOMUS</p>
+                <p>Japanese Traditional Art meets Modern Luxury</p>
             </div>
         </div>
     </footer>

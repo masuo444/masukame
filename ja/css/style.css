@@ -81,6 +81,259 @@ body::before {
   padding: 0 var(--spacing-md);
 }
 
+/* Clean Mobile-First Layout Styles */
+.hero {
+  padding: 6rem 0 4rem;
+  background: var(--color-white);
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-sumi);
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: var(--color-stone);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-image {
+  order: -1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.about, .product, .contact {
+  padding: 3rem 0;
+  background: var(--color-mist);
+}
+
+.about {
+  background: var(--color-white);
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--color-sumi);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: var(--color-stone);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-title {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: var(--color-stone);
+  line-height: 1.6;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.product-image img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  color: var(--color-sumi);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: var(--color-stone);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Button Styles */
+.btn-primary, .btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: var(--transition);
+  border: 2px solid;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background: var(--color-deep-green);
+  border-color: var(--color-deep-green);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(44, 85, 48, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(44, 85, 48, 0.2);
+}
+
+/* Tablet and Desktop Styles */
+@media (min-width: 768px) {
+  .hero .container {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .hero-content {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .hero-image {
+    order: 0;
+    flex: 1;
+  }
+  
+  .hero-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .features {
+    flex-direction: row;
+  }
+  
+  .product-card {
+    flex-direction: row;
+  }
+  
+  .product-image {
+    flex: 1;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .contact-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
 /* Header & Navigation */
 header {
   position: fixed;
@@ -301,48 +554,198 @@ nav {
   }
 }
 
+/* Mobile Styles - Unified and Clean */
 @media (max-width: 480px) {
-  .hero-photo {
-    padding-top: 60px;
-    min-height: 400px;
-  }
-  
+  /* Header and Navigation */
   nav {
-    padding: calc(var(--spacing-sm) * 0.7) var(--spacing-sm);
+    padding: 0.8rem 1rem;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
   }
   
   .logo {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    flex-shrink: 0;
   }
   
   .nav-menu {
-    display: none; /* Hide on mobile, show mobile menu instead */
+    display: none;
   }
   
   .language-switcher {
     margin-left: auto;
-    margin-right: var(--spacing-sm);
+    margin-right: 0.5rem;
+    flex-shrink: 0;
   }
   
   .lang-button {
-    padding: 5px 10px;
-    font-size: 0.8rem;
+    padding: 8px 12px;
+    background: rgba(44, 85, 48, 0.1);
+    border: 1px solid var(--color-sage);
+    border-radius: 6px;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 44px;
+    height: 36px;
+    justify-content: center;
+  }
+  
+  .lang-button:hover {
+    background: var(--color-accent);
+    color: white;
   }
   
   .lang-button .lang-current {
-    display: none; /* Hide text on very small screens */
+    display: none;
   }
   
   .lang-button::before {
     content: "🌐";
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  
+  .lang-dropdown {
+    right: 0;
+    min-width: 120px;
   }
   
   .mobile-menu-toggle {
     display: flex;
+    flex-shrink: 0;
   }
   
-  /* Hide purchase buttons on mobile */
+  /* Hero Section */
+  .hero-photo {
+    padding-top: 70px;
+    min-height: 60vh;
+    height: auto;
+  }
+  
+  .hero-image-container {
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+  }
+  
+  .hero-main-image {
+    object-position: center center;
+  }
+  
+  .scroll-indicator {
+    bottom: 20px;
+    padding: 8px 16px;
+  }
+  
+  .scroll-text {
+    font-size: 0.75rem;
+  }
+  
+  /* Container and Layout */
+  .container {
+    padding: 0 1rem;
+  }
+  
+  /* Typography */
+  .intro-title-premium {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  
+  .hero-content .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content .description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Cards and Components */
+  .card, .journey-card, .collection-card {
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Buttons */
+  .btn-modern {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  
+  /* Story and Icon Styles */
+  .story-image-placeholder {
+    padding: var(--spacing-lg);
+  }
+  
+  .symbol-icon {
+    font-size: 2rem;
+  }
+  
+  .fusion-symbol {
+    font-size: 1.5rem;
+  }
+  
+  .result-name {
+    font-size: 1.2rem;
+  }
+  
+  .craft-icon {
+    font-size: 2rem;
+  }
+  
+  .journey-icon {
+    font-size: 2.5rem;
+  }
+  
+  .spec-item {
+    font-size: 0.8rem;
+  }
+  
+  .steps-title {
+    font-size: 1.3rem;
+  }
+  
+  .quote-mark-large {
+    font-size: 4rem;
+    top: -0.5rem;
+  }
+  
+  .founder-quote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .title-japanese {
+    font-size: 2.5rem;
+  }
+  
+  .title-english {
+    font-size: 1.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+  
+  /* Hide elements on mobile */
   .hidden-mobile {
     display: none !important;
   }
@@ -1595,36 +1998,6 @@ footer::before {
   }
 }
 
-@media (max-width: 480px) {
-  /* Perfect small screen layout - iPhone 16 optimized */
-  .intro-title-premium {
-    font-size: 1.8rem !important;
-    white-space: nowrap !important;
-  }
-  
-  .container {
-    padding: 0 0.75rem;
-  }
-  
-  .card, .journey-card, .collection-card {
-    padding: 1rem;
-  }
-  
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  
-  .hero-content .subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .hero-content .description {
-    font-size: 1rem;
-  }
-  
-  .card {
-    padding: var(--spacing-md);
-  }
 }
 
 /* iPhone 16 series specific optimizations */

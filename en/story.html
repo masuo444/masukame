@@ -106,39 +106,23 @@
 
 <body>
     <!-- Header Navigation -->
-    <header class="nav-header">
-        <div class="nav-container">
+    <header>
+        <nav class="container">
             <a href="index.html" class="nav-logo">MASUKAME</a>
             
-            <nav class="nav-menu" role="navigation">
-                <a href="index.html" class="nav-link">HOME</a>
-                <a href="story.html" class="nav-link active">STORY</a>
-                <a href="craft.html" class="nav-link">CRAFT</a>
-                <a href="editions.html" class="nav-link">EDITIONS</a>
-                <a href="provenance.html" class="nav-link">PROVENANCE</a>
-                <a href="exhibitions.html" class="nav-link">EXHIBITIONS</a>
-                <a href="collaborations.html" class="nav-link">COLLABORATIONS</a>
-                <a href="purchase.html" class="nav-link">PURCHASE</a>
-            </nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="story.html" class="active">STORY</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
+            </ul>
             
-            <div class="nav-cta">
-                <select class="currency-selector" aria-label="Currency">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="AED">AED</option>
-                    <option value="JPY">JPY</option>
-                </select>
-                <a href="purchase.html" class="btn btn-primary btn-sm">Purchase</a>
-                <a href="index.html#concierge" class="btn btn-secondary btn-sm">Concierge</a>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="nav-mobile-toggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
@@ -374,11 +358,11 @@
             </p>
             
             <div style="display: flex; justify-content: center; gap: var(--space-6); flex-wrap: wrap;">
-                <a href="craft.html" class="btn btn-secondary btn-lg">
+                <a href="story.html" class="btn btn-secondary btn-lg">
                     Learn About Craft
                 </a>
-                <a href="editions.html" class="btn btn-primary btn-lg">
-                    View Editions
+                <a href="order.html" class="btn btn-primary btn-lg">
+                    Order
                 </a>
             </div>
         </div>
