@@ -1380,6 +1380,11 @@ footer::before {
   .card {
     padding: var(--spacing-md);
   }
+  
+  /* Hide purchase buttons on mobile */
+  .hidden-mobile {
+    display: none !important;
+  }
 }
 
 /* iPhone 16 series specific optimizations */

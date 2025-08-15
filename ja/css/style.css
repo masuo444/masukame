@@ -341,6 +341,11 @@ nav {
   .mobile-menu-toggle {
     display: flex;
   }
+  
+  /* Hide purchase buttons on mobile */
+  .hidden-mobile {
+    display: none !important;
+  }
 }
 
 .hero-image-container {
