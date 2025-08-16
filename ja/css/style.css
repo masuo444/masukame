@@ -659,25 +659,35 @@ nav {
   
   /* Typography - Mobile sizes */
   .intro-title-premium {
-    font-size: 2rem !important;
-    line-height: 1.15;
+    font-size: 1.8rem !important;
+    line-height: 1.2;
     margin-bottom: 20px;
     font-weight: 700;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   .intro-subtitle-container {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   
   .intro-tagline-premium {
-    font-size: 1rem;
-    margin: 0 12px;
+    font-size: 0.95rem;
+    margin: 0 8px;
     font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   
   .subtitle-line {
-    width: 40px;
+    width: 30px;
     height: 1px;
+    flex-shrink: 0;
   }
   
   .intro-description-premium {
@@ -993,16 +1003,138 @@ nav {
   /* Collection Page - Mobile */
   .hero {
     height: auto;
-    padding: 80px 16px 48px;
+    padding: 80px 0 48px;
+    overflow-x: hidden;
+  }
+  
+  .hero .container {
+    padding: 0 20px;
   }
   
   .hero > .container > div {
     display: block !important;
+    max-width: 100%;
+    overflow: hidden;
   }
   
   .product-image {
-    max-width: 280px;
+    max-width: 100%;
+    width: 280px;
     margin: 0 auto 32px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Collection page content */
+  .hero h1 {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    word-wrap: break-word;
+  }
+  
+  .hero .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+  
+  .hero .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  .hero .price-section {
+    margin-bottom: 24px;
+  }
+  
+  .hero .price-display {
+    margin-bottom: 12px;
+  }
+  
+  .hero .price-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-accent);
+  }
+  
+  .hero .price-currency {
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+  
+  .hero .price-note {
+    font-size: 0.85rem;
+    color: var(--color-stone);
+    margin-bottom: 8px;
+  }
+  
+  /* Key Features section in collection */
+  .hero .key-features {
+    background: rgba(248, 249, 248, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .hero .key-features h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: 12px;
+  }
+  
+  .hero .key-features ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .hero .key-features li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-charcoal);
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .hero .key-features li:before {
+    content: "•";
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+  }
+  
+  /* Purchase button in collection */
+  .hero .btn {
+    width: 100%;
+    padding: 16px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--color-accent), var(--color-emerald));
+    color: white;
+    border: none;
+    box-shadow: 0 4px 16px rgba(44, 85, 48, 0.3);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(44, 85, 48, 0.4);
   }
   
   /* Order Page - Mobile */
@@ -1053,7 +1185,7 @@ nav {
   
   /* Mobile Menu (when opened) */
   .nav-menu.active {
-    display: flex;
+    display: flex !important;
     position: fixed;
     top: 64px;
     left: 0;
@@ -1065,6 +1197,19 @@ nav {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
     gap: 0;
     border-top: 1px solid rgba(44, 85, 48, 0.1);
+    z-index: 999;
+    animation: slideDown 0.3s ease-out;
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .nav-menu.active li {
@@ -1081,6 +1226,7 @@ nav {
     border-radius: 8px;
     margin-bottom: 4px;
     transition: all 0.3s ease;
+    text-decoration: none;
   }
   
   .nav-menu.active li a:hover,
@@ -1092,6 +1238,19 @@ nav {
   
   .nav-menu.active li:last-child a {
     border-bottom: 1px solid rgba(44, 85, 48, 0.1);
+  }
+  
+  /* Hamburger animation */
+  .mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
   }
 }
 
