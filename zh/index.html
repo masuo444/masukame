@@ -54,22 +54,6 @@
                 <li><a href="https://www.instagram.com/masukame_official/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></li>
             </ul>
             
-            <!-- Language Switcher -->
-            <div class="language-switcher">
-                <button class="lang-button" aria-label="选择语言" onclick="toggleLanguageMenu()">
-                    <span class="lang-current">中文</span>
-                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <div class="lang-dropdown" id="langDropdown">
-                    <a href="/ja/" class="lang-option">日本語</a>
-                    <a href="/en/" class="lang-option">English</a>
-                    <a href="/fr/" class="lang-option">Français</a>
-                    <a href="/zh/" class="lang-option active">中文</a>
-                    <a href="/ar/" class="lang-option">العربية</a>
-                </div>
-            </div>
             
             <div class="mobile-menu-toggle">
                 <span></span>
@@ -172,28 +156,5 @@
 
     <script src="js/script.js"></script>
     
-    <!-- Language Switcher Script -->
-    <script>
-        function toggleLanguageMenu() {
-            const dropdown = document.getElementById('langDropdown');
-            const button = document.querySelector('.lang-button');
-            
-            dropdown.classList.toggle('show');
-            button.classList.toggle('active');
-            
-            // Close when clicking outside
-            document.addEventListener('click', function(event) {
-                if (!event.target.closest('.language-switcher')) {
-                    dropdown.classList.remove('show');
-                    button.classList.remove('active');
-                }
-            });
-        }
-        
-        // Prevent closing when clicking on the button itself
-        document.querySelector('.lang-button').addEventListener('click', function(event) {
-            event.stopPropagation();
-        });
-    </script>
 </body>
 </html>

@@ -1633,284 +1633,407 @@ footer::before {
 
 /* Mobile Styles - Unified and Clean */
 @media (max-width: 480px) {
-  /* Header and Navigation */
+  /* Header - Simple single row */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 56px;
+  }
+  
   nav {
-    padding: 0.8rem 1rem;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
+    padding: 0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
   }
   
   .logo {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    flex-shrink: 0;
+    letter-spacing: 0.1em;
   }
   
   .nav-menu {
     display: none;
   }
   
+  /* Hide language switcher on mobile */
   .language-switcher {
-    margin-left: auto;
-    margin-right: 0.5rem;
-    flex-shrink: 0;
-  }
-  
-  .lang-button {
-    padding: 8px 12px;
-    background: rgba(44, 85, 48, 0.1);
-    border: 1px solid var(--color-sage);
-    border-radius: 6px;
-    color: var(--color-accent);
-    font-size: 0.75rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    min-width: 44px;
-    height: 36px;
-    justify-content: center;
-  }
-  
-  .lang-button:hover {
-    background: var(--color-accent);
-    color: white;
-  }
-  
-  .lang-button .lang-current {
     display: none;
-  }
-  
-  .lang-button::before {
-    content: "🌐";
-    font-size: 1.1rem;
-  }
-  
-  .lang-dropdown {
-    right: 0;
-    min-width: 120px;
   }
   
   .mobile-menu-toggle {
     display: flex;
-    flex-shrink: 0;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    margin-right: -8px;
   }
   
-  /* Hero Section */
+  .mobile-menu-toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--color-sumi);
+    transition: all 0.3s ease;
+  }
+  
+  /* Hero Section - Mobile optimized */
   .hero-photo {
-    padding-top: 70px;
-    min-height: 60vh;
-    height: auto;
+    padding-top: 56px;
+    height: 50vh;
+    min-height: 400px;
   }
   
   .hero-image-container {
-    border-radius: 0 0 20px 20px;
-    overflow: hidden;
+    height: 100%;
   }
   
   .hero-main-image {
     object-position: center center;
+    height: 100%;
   }
   
   .scroll-indicator {
-    bottom: 20px;
-    padding: 8px 16px;
+    bottom: 16px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
   }
   
   .scroll-text {
+    font-size: 0.7rem;
+  }
+  
+  .scroll-arrow {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Container - Mobile optimized */
+  .container {
+    padding: 0 16px;
+    max-width: 100%;
+  }
+  
+  /* Sections - Mobile spacing */
+  .intro-section-premium {
+    padding: 48px 0;
+  }
+  
+  .section-modern {
+    padding: 48px 0;
+  }
+  
+  /* Typography - Mobile sizes */
+  .intro-title-premium {
+    font-size: 1.75rem !important;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+  
+  .intro-subtitle-container {
+    margin-bottom: 20px;
+  }
+  
+  .intro-tagline-premium {
+    font-size: 0.9rem;
+    margin: 0 8px;
+  }
+  
+  .subtitle-line {
+    width: 30px;
+  }
+  
+  .intro-description-premium {
+    margin-bottom: 24px;
+  }
+  
+  .description-primary {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  
+  .description-secondary {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  .section-title-modern {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+  
+  .section-header-modern {
+    margin-bottom: 32px;
+  }
+  
+  .section-number {
     font-size: 0.75rem;
   }
   
-  /* Container and Layout */
-  .container {
-    padding: 0 1rem;
+  /* About Section - Mobile */
+  .about-content-grid {
+    display: block;
   }
   
-  /* Typography */
-  .intro-title-premium {
-    font-size: 1.8rem !important;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+  .about-text {
+    margin-bottom: 32px;
   }
   
-  .hero-content h1 {
-    font-size: 2rem;
-    line-height: 1.1;
+  .intro-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
   }
   
-  .hero-content .subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+  .features-modern {
+    gap: 20px;
   }
   
-  .hero-content .description {
-    font-size: 1rem;
-    line-height: 1.5;
+  .feature-modern {
+    gap: 12px;
   }
   
-  /* Cards and Components */
-  .card, .journey-card, .collection-card {
-    padding: 1.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Buttons */
-  .btn-modern {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.85rem;
-    white-space: nowrap;
-  }
-  
-  /* Story and Icon Styles */
-  .story-image-placeholder {
-    padding: var(--spacing-lg);
-  }
-  
-  .symbol-icon {
-    font-size: 2rem;
-  }
-  
-  .fusion-symbol {
+  .feature-icon-modern {
     font-size: 1.5rem;
   }
   
-  .result-name {
-    font-size: 1.2rem;
+  .feature-text h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
   }
   
-  .craft-icon {
+  .feature-text p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  /* Product Section - Mobile */
+  .showcase-grid {
+    display: block;
+  }
+  
+  .product-card-modern {
+    margin-bottom: 24px;
+    padding: 20px;
+  }
+  
+  .product-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .badge-limited {
+    font-size: 0.65rem;
+    padding: 3px 8px;
+  }
+  
+  .product-image-modern {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .product-details {
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    font-size: 0.85rem;
+    padding: 8px 0;
+  }
+  
+  .price-display-modern {
+    margin-bottom: 20px;
+  }
+  
+  .price-main {
+    font-size: 1.5rem;
+  }
+  
+  .price-sub {
+    font-size: 0.75rem;
+  }
+  
+  /* Buttons - Mobile */
+  .btn-premium {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  .btn-premium.secondary {
+    margin-bottom: 0;
+  }
+  
+  .intro-actions-premium {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  /* Cards - Mobile */
+  .card {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .journey-card {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .collection-card {
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  
+  /* Story Page - Mobile */
+  .story-content-centered {
+    padding: 0 16px;
+  }
+  
+  .story-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .story-text p {
+    margin-bottom: 16px;
+  }
+  
+  /* Journey Section - Mobile */
+  .journey-icon {
     font-size: 2rem;
   }
   
-  .journey-icon {
-    font-size: 2.5rem;
+  .journey-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
   
-  .spec-item {
-    font-size: 0.8rem;
+  .journey-features {
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
   
-  .steps-title {
-    font-size: 1.3rem;
+  /* Founder Section - Mobile */
+  .founder-section {
+    padding: 48px 0;
   }
   
   .quote-mark-large {
-    font-size: 4rem;
+    font-size: 3rem;
     top: -0.5rem;
   }
   
   .founder-quote {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .hero-badge {
-    font-size: 0.75rem;
-    padding: 0.4rem 1rem;
-  }
-  
-  .title-japanese {
-    font-size: 2.5rem;
-  }
-  
-  .title-english {
-    font-size: 1.2rem;
-  }
-  
-  .hero-description {
     font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 16px;
   }
   
-  .feature-icon {
-    font-size: 2rem;
+  .founder-name {
+    font-size: 0.9rem;
   }
   
-  .founder-message::before {
-    font-size: 2.5rem;
+  .founder-title {
+    font-size: 0.8rem;
   }
   
-  .nav-item {
-    padding: var(--spacing-md);
-  }
-  
-  .nav-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.8rem;
-  }
-  
-  .nav-content h3 {
-    font-size: 1.2rem;
-  }
-  
-  .feature-icon-modern {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-  
-  .quote-mark {
-    font-size: 3rem;
-  }
-  
-  /* Small Mobile Collection Specific */
+  /* Collection Page - Mobile */
   .hero {
-    padding: 1.5rem 0.5rem !important;
+    height: auto;
+    padding: 80px 16px 48px;
+  }
+  
+  .hero > .container > div {
+    display: block !important;
   }
   
   .product-image {
-    max-width: 250px !important;
-  }
-  
-  .hero h1 {
-    font-size: 1.5rem !important;
-  }
-  
-  .hero .description p {
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
-  }
-  
-  /* Features List Mobile */
-  .hero ul {
-    font-size: 0.8rem !important;
-    padding-left: 1rem !important;
-  }
-  
-  /* Buttons Mobile */
-  .btn, .btn-primary, .btn-modern {
-    width: 100%;
     max-width: 280px;
-    margin: 0 auto;
-    display: block;
+    margin: 0 auto 32px;
+  }
+  
+  /* Order Page - Mobile */
+  .order-hero {
+    padding: 80px 16px 48px;
+  }
+  
+  .order-form {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+  
+  /* Footer - Mobile */
+  footer {
+    padding: 32px 0 24px;
+  }
+  
+  .footer-content {
+    font-size: 0.8rem;
     text-align: center;
   }
   
-  /* Card Padding Mobile */
-  .card {
-    padding: var(--spacing-md) !important;
-  }
-  
-  /* Mobile Touch Targets */
-  a, button, .btn {
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Disabled Buttons Mobile */
-  span.btn, span.elegant-btn {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
+  /* Pattern Elements - Hide on mobile */
+  .intro-pattern,
+  .pattern-element {
+    display: none;
   }
   
   /* Hide elements on mobile */
   .hidden-mobile {
     display: none !important;
+  }
+  
+  /* Mobile Menu (when opened) */
+  .nav-menu.active {
+    display: flex;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    gap: 0;
+  }
+  
+  .nav-menu.active li {
+    width: 100%;
+  }
+  
+  .nav-menu.active li a {
+    display: block;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .nav-menu.active li:last-child a {
+    border-bottom: none;
   }
 }
 
